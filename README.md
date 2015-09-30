@@ -3,6 +3,7 @@ An interactive Google map of all of the current (as of 2015) companies in the Po
 
 ***Requirements:***
  * MySQL server with valid credentials
+ * Web server
  * PHP support
  
 ***This project is currently under early stages of development.***
