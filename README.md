@@ -1,5 +1,5 @@
 # Silicon Forest Map
-An interactive Google map of all of the current (as of 2015) companies in the Portland, Oregon metropolitan area which employ software developers, software engineers and / or web developers.
+An interactive Google map of all of the current (as of 2015) companies in the Portland, Oregon area which employ software developers, software engineers and / or web developers.
 
 **Tools / languages used:**
  * MySQL
