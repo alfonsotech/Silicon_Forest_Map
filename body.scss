@@ -1,0 +1,40 @@
+/**
+ * City Scatterplot
+ * Copyright 2015 Todd Brochu
+ */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.left_panels {
+    float: left;
+    width: 24%;
+}
+
+#regions {
+    width: 100%;
+    line-height: 15px;
+    background-color: #e6e7e8;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #01a8d2;
+}
+
+#results {
+    padding-left: 40px;
+    padding-bottom: 20px;
+    width: 100%;
+    line-height: 20px;
+}
+
+#map {
+    float: right;
+    height: 100%;
+    width: 75%;
+    margin: 2px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #01a8d2;
+}

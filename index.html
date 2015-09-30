@@ -1,0 +1,25 @@
+<!--
+City Scatterplot
+Copyright 2015 Todd Brochu
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>City Scatterplot</title>
+    <script type="text/javascript" src="body.js"></script>
+    <link rel="stylesheet" href="body.scss"/>
+  </head>
+  <body>
+      <div class="left_panels">
+        <div id="regions"></div>
+        <div id="results"></div>
+        <script>window.onload=getRegions;</script>
+      </div>
+      <div id="map"><script>document.addEventListener("load", getAllCompanies());</script></div>
+    <script>document.write(initMap())</script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk_yXEl8gEgsEtRv1-XgwKZSI2Khim3Sk&callback=initMap">
+    </script>      
+  </body>
+</html> 
