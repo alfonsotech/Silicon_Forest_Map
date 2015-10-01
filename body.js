@@ -198,7 +198,7 @@ function createMarkers() {
                     position: new google.maps.LatLng(locations[i][2], locations[i][3]),
                     map: map,
                     icon: 'marker.png',
-                    title: locations[i][1]
+                    title: locations[i][1] + "\n" + locations[i][4]
            });
         markers.push(marker);
         markers[i].setVisible(false); 
