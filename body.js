@@ -90,7 +90,7 @@ function getAllCompanies() {
          var ajaxDisplay = document.getElementById('map');
          ajaxDisplay.innerHTML = ajaxRequest.responseText;
          //chop off the html encoding from the responseText, leaving just the array value literals
-         var literals = ajaxRequest.responseText.substring(41, ajaxRequest.responseText.length-16);
+         var literals = ajaxRequest.responseText.substring(100, ajaxRequest.responseText.length-16);
          //convert the returned string to an array
          locations = eval("[" + literals + "]");
       }
