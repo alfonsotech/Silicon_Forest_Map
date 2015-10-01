@@ -11,6 +11,8 @@ An interactive Google map of all of the current (as of 2015) companies in the Po
 
 **Requirements:**
  * MySQL server with valid credentials
+  * default schema name: myDB
+  * default character set: utf8
  * Web server
  * PHP support
  
