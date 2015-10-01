@@ -24,7 +24,7 @@ Copyright 2015 Todd Brochu
         $display_string = "[]";
 
         while($row = mysql_fetch_array($qry_result)){
-            $display_string .= " ,[\"$row[id]\", \"$row[name]\", \"$row[latitude]\", \"$row[longitude]\", \"$row[address]\", \"$row[region]\", \"$row[url]\"]";
+            $display_string .= " ,[\"$row[id]\", \"$row[name]\", \"$row[latitude]\", \"$row[longitude]\", \"$row[address]\", \"$row[region]\", \"$row[url]\", \"$row[phone]\"]";
         }
          
         echo $display_string;
