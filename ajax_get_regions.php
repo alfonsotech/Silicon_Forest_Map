@@ -15,7 +15,7 @@ Copyright 2015 Todd Brochu
         mysql_select_db($dbname) or die(mysql_error());
 
         //build query
-        $query = "SELECT region FROM Employers ORDER BY region";
+        $query = "SELECT DISTINCT region FROM Employers ORDER BY region";
 
         //Execute query
         $qry_result = mysql_query($query) or die(mysql_error());
