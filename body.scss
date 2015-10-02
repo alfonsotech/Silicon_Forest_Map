@@ -11,29 +11,38 @@ html, body {
 .left_panels {
     float: left;
     width: 24%;
+    background-color: #e6e7e8;
 }
 
 #regions {
-    width: 100%;
+    width: 350px;
+    height: 256px;
+    overflow-y: scroll;
     line-height: 15px;
-    background-color: #e6e7e8;
     border-style: solid;
     border-width: 3px;
     border-color: #01a8d2;
 }
 
 #results {
+    width: 310px;
+    height: 291px;
+    overflow-y: auto;
+    line-height: 22px;
+    border-style: solid;
+    border-width: 3px;
+    border-top-color: white;
+    border-left-color: white;
+    border-right-color: white;
+    border-bottom-color: #01a8d2; 
     padding-left: 40px;
-    padding-bottom: 20px;
-    width: 100%;
-    line-height: 20px;
+    padding-bottom: 20px;           
 }
 
 #map {
     float: right;
-    height: 100%;
-    width: 75%;
-    margin: 2px;
+    height: 92%;
+    width: 1006px;
     border-style: solid;
     border-width: 3px;
     border-color: #01a8d2;

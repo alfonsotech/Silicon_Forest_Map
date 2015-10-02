@@ -8,7 +8,6 @@ Copyright 2015 Todd Brochu
     <?php
         include 'credentials.php';
         
-
         //Connect to MySQL server
         mysql_connect($dbhost, $dbuser, $dbpass);
 
