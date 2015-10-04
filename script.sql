@@ -91,3 +91,127 @@ INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone
 VALUES(44, 'Avtec Media Group', 45.517298, -122.675688, '818 SW 3rd Ave #221-3546, Portland, OR 97204-2405', 'Portland - SW', 'http://avtecmedia.com/', 'Phone: 800-614-0372');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(45, 'Axis Clinical Software, Inc.', 45.487589, -122.743476, '6443 SW Beaverton-Hillsdale Hwy, Suite 400, Portland, OR 97221', 'Portland - SW', 'http://www.axisclinical.com/index.php/about-us/careers.html', 'Phone: 503-292-3022');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(46, 'BaldPeak Software', 45.521366, -122.680792, '921 SW Washington St, Suite 550, Portland, OR, 97205', 'Portland - SW', 'http://www.baldpeak.com/careers/', 'Phone: (800) 381-9556');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(47, 'Banfield Pet Hospital', 45.536458, -122.580616, '8000 NE Tillamook St, Portland 97213-6655', 'Portland - NE', 'http://www.banfield.com/careers', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(48, 'BeFunky, Inc.', 45.529035, -122.643950, '2117 NE Oregon St, Suite 301 Portland, OR 97232', 'Portland - NE', 'http://www.befunky.com/careers/', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(49, 'Bigleaf Networks', 45.511808, -122.777774, '9755 SW Barnes Rd, Suite 480, Portland, OR 97225', 'Portland - SW', 'http://www.bigleaf.net/careers/', 'Phone: (503) 985-8298');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(50, 'BI, Inc. (a GEO Group Company)', 45.333285, -122.592696, '402 Beavercreek Rd, #105, Oregon City, OR 97045', 'Oregon City', 'http://bi.com/career-seekers/', 'Phone: (503) 722-1222');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(51, 'Billups', 45.417225, -122.657757, '340 Oswego Pointe Dr, Suite 101, Lake Oswego, OR 97034', 'Lake Oswego', 'http://billupsww.com/careers.html', 'Phone: (503) 454-0714');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(52, 'BIOTRONIK', 45.396174, -122.739622, '6024 Jean Rd, Lake Oswego, OR, 97035-5571', 'Lake Oswego', 'http://www.biotronik.com/wps/wcm/connect/en_us_web/biotronik/careers/job_search/page_jobsearch_us', 'Phone: 800-547-0394');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(53, 'BodyBuilding.com', 45.523062, -122.676482, 'Portland, OR', '(unspecified region)', 'http://www.bodybuilding.com/fun/bbcomcareer.htm', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(54, 'Boeing', 45.544213, -122.466369, '19000 NE Sandy Blvd, Portland, OR 97230', 'Portland - NE', 'http://www.boeing.com/careers/', 'Phone: (312) 544-2000');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(55, 'Bonzi', 45.382302, -122.759969, '8100 SW Nyberg Rd, Suite 450, Tualatin, OR 97062', 'Tualatin', 'http://www.bonzicentral.com/careers/', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(56, 'BPM Northwest', 45.409277, -122.745273, '6650 SW Redwood Lane, Suite 350, Portland, OR 97224', 'Portland - SW', 'http://www.bpmnw.com/about-us/career/', 'Phone: (503) 747-2614');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(57, 'Brainium Studios', 45.530581, -122.682032, '1022 NW Marshall St., Suite 480, Portland, OR 97209', 'Portland - NW', 'http://www.brainiumstudios.com/site/careers.html', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(58, 'Brandlive', 45.533740, -122.691343, '1941 NW Quimby St, Portland, OR 97209', 'Portland - NW', 'http://www.yourbrandlive.com/about/careers', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(59, 'Bright.MD', 45.511505, -122.640990, '1536 SE 24th Ave, Portland, OR 97214', 'Portland - SE', 'http://bright.md/careers', 'Phone: (503) 784-9900');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(60, 'Building Energy', 45.521619, -122.673038, '205 SW Pine St, Portland, OR 97204', 'Portland - SW', 'http://www.buildingenergy.com/careers', 'Phone: (503) 505-0574');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(61, 'Cambia Health Solutions', 45.511406, -122.678724, '200 SW Market St, Portland, OR 97201', 'Portland - SW', 'http://cambiahealth.hodesiq.com/job-search.aspx', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(62, 'Canright', 45.512020, -122.617620, '4332 SE Hawthorne Blvd., Portland, OR 97215', 'Portland - SE', 'http://www.canright.com/about.htm', 'Phone: 503-482-8370');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(63, 'Capsa Solutions', 45.553358, -122.469942, '4253 NE 189th Ave, Portland, OR 97230', 'Portland - NE', 'http://www.capsasolutions.com/about/careers-job-listings/', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(64, 'CarePayment', 45.417223, -122.732023, '5300 Meadows Rd, #400, Lake Oswego, OR 97035', 'Lake Oswego', 'https://www.carepayment.com/about-us/careers/', 'Phone: (503) 419-3505');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(65, 'Cascade Microtech, Inc.', 45.537177, -122.886956, '2430 NW 206th Ave, Beaverton, OR 97006', 'Beaverton', 'http://www.cascademicrotech.com/company/careers/current-openings-us/current-openings-us', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(66, 'Cast Iron Coding', 45.518658, -122.664903, '108 SE Washington St, #238, Portland, OR 97214', 'Portland - SE', 'http://castironcoding.com/', 'Phone: (503) 841-5669');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(67, 'Catalyst IT Services / Catalyst Devworks', 45.525705, -122.832571, '15220 NW Greenbrier Pkwy, Suite 380, Beaverton OR, 97006', 'Beaverton', 'http://www.catalystitservices.com/careers/current-positions#Current_Position-block_1-0', 'Phone: (503) 303-8558');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(68, 'CD Baby', 45.563118, -122.520480, '13909 NE Airport Way, Portland, OR 97230', 'Portland - NE', 'http://www.cdbaby.com/careers.aspx', 'Phone:  503-595-3000');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(69, 'CDK Global', 45.504150, -122.679609, '2525 SW First Ave, Suite 400, Portland, OR 97201', 'Portland - SW', 'http://www.cdkjobs.com/filter/category/technology', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(70, 'C & E Systems', 45.498989, -122.645874, '3321 SE 20th Ave, Portland OR 97202', 'Portland - SE', 'https://www.c-esystems.com/home.aspx', 'Phone:  503-295-1851');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(71, 'Cedexis', 45.519158, -122.675567, '317 SW Alder St, #650, Portland, OR 97204', 'Portland - SW', 'http://www.cedexis.com/about/#careers', 'Phone: 855-CEDEXIS');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(72, 'Chirpify', 45.519158, -122.675567, '317 SW Alder St #1100, Portland, OR 97204', 'Portland - SW', 'https://www.chirpify.com/', 'Phone: (503) 208-3068');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(73, 'Chrome Data Solutions / Autodata Solutions', 45.531204, -122.657858, '700 NE Multnomah St, 15th Floor, Portland, OR 97232', 'Portland - NE', 'http://autodata.theresumator.com/apply', 'Phone: (800) 936-8906');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(74, 'Cinco Design', 45.510560, -122.654500, '1700 SE 11th Ave, Portland, OR 97214', 'Portland - SE', 'http://cincodesign.com/careers', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(75, 'Circle Technology', 45.615710, -122.648092, '600 SE Maritime Ave, Suite 230 Vancouver, WA 98661', 'Vancouver', 'http://thecircletech.com/careers/', 'Phone: 360.980.8838');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(76, 'Clackamas Community College', 45.322971, -122.574307, '19600 Molalla Ave, Oregon City, OR 97045', 'Oregon City', 'http://www.clackamas.edu/jobs/opportunities/', 'Phone: 503-594-3458');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(77, 'Clean Water Services', 45.501415, -122.990016, '2550 SW Hillsboro Hwy, Hillsboro, OR 97123', 'Hillsboro', 'http://agency.governmentjobs.com/cws/default.cfm', 'Phone: (503) 681-3600');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(78, 'Clear Mountain Software', 45.577621, -122.356144, '1436 A St, Washougal, WA 98671-2378', 'Washougal', 'http://www.clearmt.net/', 'Phone: (360) 210-5015');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(79, 'Clinicient', 45.518082, -122.675375, '708 SW 3rd Ave, Suite 400, Portland, OR 97204', 'Portland - SW', 'http://www.clinicient.com/job-openings/careers/jobs', 'Phone: (503) 525-0275');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(80, 'Cloudability', 45.520028, -122.679776, '718 SW Alder St, Suite 300, Portland, OR 97205', 'Portland - SW', 'https://cloudability.com/jobs/', 'Phone: (503) 219-0660');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(81, 'CloudBolt Software', 45.511124, -122.662448, '1650 SE 3rd Ave, Suite 207, Portland, OR, 97214-2159', 'Portland - SE', 'http://www.cloudboltsoftware.com/careers', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(82, 'Cognex', 45.405749, -122.752717, '15865 SW 74th Ave, #105, Portland, OR 97224', 'Portland - SW', 'http://www.cognex.com/cognexinfo/careers/careers.aspx', 'Phone: (503) 620-1889');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(83, 'CollabNet', 45.510102, -122.677017, '1800 SW 1st Ave, #350, Portland, OR 97201', 'Portland - SW', 'http://www.collab.net/company/careers', 'Phone: (503) 248-0800');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(84, 'CollegeNet, Inc.', 45.518428, -122.677017, '805 SW Broadway, Suite 1600, Portland, OR 97205', 'Portland - SW', 'http://corp.collegenet.com/jobs.html', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(85, 'Columbia Machine', 45.620837, -122.643371, '107 Grand Blvd, Vancouver, WA 98661', 'Vancouver', 'http://www.columbiamachine.com/about-us/employment', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(86, 'Columbia Sportswear', 45.529486, -122.825416, '14375 NW Science Park Dr, Portland, OR 97229', 'Portland - NW', 'http://www.columbia.com/About-Us_Careers.html', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(87, 'Columbia Ultimate', 45.653968, -122.594882, '4400 NE 77th Ave, Suite 100, Vancouver, WA 98662', 'Vancouver', 'https://www.columbiaultimate.com/our-company/job-opportunities/', 'Phone: 800.488.4420');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(88, 'Columbia United Providers', 45.596989, -122.479020, '19120 SE 34th St, Suite #201, Vancouver, WA 98683', 'Vancouver', 'https://www.cuphealth.com/careers', 'Phone: (360) 891-1520');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(89, 'Compliance Cops', 45.299521, -122.767554, '30470 SW Parkway Ave, Wilsonville, OR 97070', 'Wilsonville', 'https://www.compliancecops.com/Public/Default.aspx', 'Phone: (503) 482-6628');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(90, 'Compound Photonics', 45.627712, -122.669810, '805 Broadway St, Suite 300, Vancouver, WA 98660', 'Vancouver', 'http://www.compoundphotonics.com/careers', 'Phone: 360-326-4695');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(91, 'CompuNet, Inc.', 45.417145, -122.733143, '5400 Meadows Rd, Lake Oswego, OR 97035', 'Lake Oswego', 'http://www.compunet.biz/about/careers/', 'Phone: (503) 214-4600');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(92, 'Compview Medical, LLC', 45.622229, -122.641879, '2818 E 2nd St, Vancouver, WA 98661', 'Vancouver', 'http://compviewmedical.com/about-us/career-opportunities/', 'Phone: (503) 641-8439');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(93, 'Concordia University', 45.569672, -122.637033, '2811 NE Holman St, Portland, OR 97211', 'Portland - NE', 'http://www.cu-portland.edu/about/employment', 'Phone:  (503) 288-9371');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(94, 'Concurrent, Inc.', 45.523062, -122.676482, 'Portland, OR', '(unspecified region)', 'http://www.concurrentinc.com/company/careers/', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(95, 'Connective DX', 45.532219, -122.693195, '2030 NW Pettygrove St, Portland, OR, 97209', 'Portland - NW', 'https://www.connectivedx.com/connect/careers', 'Phone: (503) 221-9860');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(96, 'Consultware, LLC', 45.699830, -122.639647, '3101 NE 108th Cir, Vancouver, WA 98686', 'Vancouver', 'http://www.consultware-llc.com/', 'Phone: (360) 573-1939');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(97, 'Convergence Networks', 45.438446, -122.619354, '4252 SE International Way, Suite A, Milwaukie, OR 97222', 'Milwaukie', 'http://www.convergencenetworks.com/about-us/careers/', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(98, 'Convergence Training', 45.621592, -122.525543, '14300 SE 1st St, Vancouver, WA 98684', 'Vancouver', 'http://www.convergencetraining.com/job-opportunities.aspx', 'Phone: 800.619.2280');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(99, 'Con-Way, Inc.', 45.535331, -122.694097, '2055 NW Savier St, Portland, OR 97209', 'Portland - NW', 'http://www.con-way.com/en/careers', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(100, 'Cook Security Group', 45.432985, -122.602606, '5841 SE International Way, Milwaukie, OR 97222', 'Milwaukie', 'https://cooksecuritygroup.applicantpool.com/jobs/', 'Phone: (844) 305-2665');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(101, 'Copious', 45.519323, -122.651618, '501 SE 14th Ave, Portland, OR 97214', 'Portland - SE', 'http://copious.theresumator.com/apply/', 'Phone: (503) 255-1822');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(102, 'Cozy', 45.522769, -122.660163, '524 E Burnside St, 6th Floor, Portland, OR 97214', 'Portland - SE', 'https://www.cozy.co/jobs/', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(103, 'Crafts Americana Group', 45.624070, -122.537492, '13118 NE 4th St, Vancouver, WA, 98684', 'Vancouver', 'http://www.craftsamericana.com/', 'Phone: 360-260-8900');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(104, 'Creative Media Enterprises, Inc.', 45.650194, -122.673787, '302 West 39th St, Vancouver, WA 98660', 'Vancouver', 'http://cmeincgraphics.com/', 'Phone: (360) 694-7867');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(105, 'CrowdCompass', 45.520238, -122.672828, '308 SW 2nd Ave, #200, Portland, OR 97204', 'Portland - SW', 'http://www.crowdcompass.com/careers/', 'Phone: (503) 501-2425');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(106, 'CUI, Inc.', 45.374681, -122.792807, '20050 SW 112th Ave, Tualatin, OR 97062', 'Tualatin', 'http://www.cui.com/', 'Phone: (503) 612-2300');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(107, 'Cypress Minnesota, Inc. (CMI)', 45.456627, -122.789088, '8705 SW Nimbus Ave, Suite 320, Beaverton, OR 97008', 'Beaverton', 'http://www.cypress.com/', 'Phone: 503-641-8780');
