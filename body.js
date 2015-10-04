@@ -147,16 +147,9 @@ function getCompaniesByRegion(region) {
  *@return map:map
  */
 function initMap() {
-  /*var latitude = 45.5200;
-  var longitude = -122.6819;*/
-  var myLatlng = new google.maps.LatLng(45.5200, -122.6819);
-  /*var mapOptions = {
-    zoom: 10,
-    center: myLatlng,
-    mapTypeId: google.maps.MapTypeId.SATELLITE
-  };
-  var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-*/
+  //Downtown Portland: 45.5200, -122.6819
+  //132nd & SE Clatsop: 45.461277, -122.527469
+  var myLatlng = new google.maps.LatLng(45.461277, -122.527469);
 
   map = new google.maps.Map(document.getElementById('map'), {
     center: myLatlng,
