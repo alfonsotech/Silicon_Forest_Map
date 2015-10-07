@@ -215,3 +215,49 @@ INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone
 VALUES(106, 'CUI, Inc.', 45.374681, -122.792807, '20050 SW 112th Ave, Tualatin, OR 97062', 'Tualatin', 'http://www.cui.com/', 'Phone: (503) 612-2300');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(107, 'Cypress Minnesota, Inc. (CMI)', 45.456627, -122.789088, '8705 SW Nimbus Ave, Suite 320, Beaverton, OR 97008', 'Beaverton', 'http://www.cypress.com/', 'Phone: 503-641-8780');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(108, 'Daily Insight Group', 45.485427, -122.753390, '7412 SW Beaverton Hillsdale Hwy, Suite 102, Portland, OR 97225', 'Portland - SW', 'http://www.dailyinsightgroup.com/jobs/', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(109, 'Daimler Trucks North America', 45.556424, -122.705643, '4747 N Channel Ave, Portland, OR 97217', 'Portland - N', 'http://dtna.jobs/', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(110, 'DataMotion, Inc.', 45.427517, -122.745412, '6655 SW Hampton St, Suite 220, Tigard, OR 97223', 'Tigard', 'http://www.datamotion.com/about-us/careers/', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(111, 'DAT Solutions', 45.457850, -122.790352, '11000 SW Stratus St, Suite 200, Beaverton, OR 97008', 'Beaverton', 'http://www.dat.com/company/careers', 'Phone: 800-547-5417');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(112, 'David Evans and Assoc. (Corporate HQ)', 45.507049, -122.672592, '2100 SW River Pkwy, Portland, OR 97201', 'Portland - SW', 'http://www.deainc.com/careers.aspx', 'Phone: 800.721.1916');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(113, 'David Evans and Assoc. (Marine Services Division)', 45.617035, -122.641433, '2801 SE Columbia Way, Suite 130, Vancouver, WA 98661', 'Vancouver', 'http://www.deainc.com/careers.aspx', 'Phone: 360.314.3200');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(114, 'Daylight Studio', 45.515455, -122.666081, '1001 SE Water Ave, Suite 460 Portland, OR 97214', 'Portland - SE', 'http://thedaylightstudio.com/contact', 'Phone: 503.892.2808');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(115, 'Dealer Spike, LLC', 45.401361, -122.742038, '6405 Rosewood St, Lake Oswego, OR 97035', 'Lake Oswego', 'http://www.dealerspike.com/join-the-fastest-growing-company-in-the-industry--careers', 'Phone: (800) 288-5917');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(116, 'Dealertrack Technologies', 45.531204, -122.657858, '700 NE Multnomah St, Suite 1470, Portland, OR 97232', 'Portland - NE', 'https://career4.successfactors.com/career?company=dealertrack', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(117, 'Deloitte US', 45.522187, -122.676291, '111 SW 5th Ave, Suite 3900, Portland, OR 97204', 'Portland - SW', 'http://jobs.deloitte.com/portland-jobs', 'Phone: (503) 222-1341');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(118, 'Deltek Systems, Inc.', 45.446495, -122.773719, '10200 SW Greenburg Rd, Suite 600, Portland, OR 97223', 'Portland - SW', 'http://www.deltek.com/company/careers/joblistings', 'Phone: 800.637.2727');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(119, 'DevelopmentNow', 45.522741, -122.663050, '9 SE 3rd Ave, Suite #220, ‎Portland, OR 97214', 'Portland - SE', 'https://developmentnow.com/portland/', 'Phone: (800) 387-0849');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(120, 'Digimarc', 45.451832, -122.793388, '9405 SW Gemini Drive, Beaverton OR, 97008', 'Beaverton', 'http://www.digimarc.com/careers', 'Phone: (503) 469-4800');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(121, 'Digital Vision, Inc. (DVI)', 45.474018, -122.649101, '6805 SE Milwaukie Ave, Portland, OR 97202', 'Portland - SE', 'http://www.thedvi.com/empindex.php', 'Phone: (503) 231-6606');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(122, 'Digiwest, LLC', 45.519694, -122.678563, '610 SW Alder St, Suite 700, Portland, OR 97205', 'Portland - SW', 'http://www.digiwest.com/', 'Phone: (503) 224-2765');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(123, 'Dinerware (a Heartland company)', 45.521235, -122.677916, '326 SW Broadway, #400, Portland, OR 97205', 'Portland - SW', 'https://careers-heartland.icims.com/jobs/search?ss=1&searchLocation=12781-12821-Portland', 'Phone: (503) 227-7600');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(124, 'Discogs', 45.487841, -122.744699, '6663 SW Beaverton Hillsdale Hwy, PBM #323, Portland, OR 97225', 'Portland - SW', 'http://www.discogs.com/jobs', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(125, 'DiscoverOrg', 45.627712, -122.669810, '805 Broadway St, 9th Floor, Vancouver, WA, 98660', 'Vancouver', 'https://discoverorg.com/careers/open-positions/', 'Phone : 800-914-1220');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(126, 'DM2 Software, Inc.', 45.653557, -122.593599, '7700 NE Greenwood Dr, Suite 200, Vancouver, WA 98662', 'Vancouver', 'http://wp.dm2.com/employment-opportunities/', 'Phone: (800) 866-5151');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(127, 'Downstream', 45.528548, -122.687882, '1624 NW Johnson St, Portland, OR, 97209', 'Portland - NW', 'http://downstream.com/careers', 'Phone: 503.226.1944');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(128, 'DualSpark', 45.523062, -122.676482, 'Portland, OR', '(unspecified region)', 'http://www.dualspark.com/joinus.html', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(129, 'DW Fritz Automation, Inc.', 45.322986, -122.766665, '27200 SW Parkway Ave, Wilsonville, OR 97070', 'Wilsonville', 'http://dwfritz.com/careers', 'Phone: (503) 598-9393');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(130, 'Dynamic Events, Inc.', 45.670557, -122.623397, '4510 NE 68th Dr, Suite 102, Vancouver, WA 98661', 'Vancouver', 'http://www.dynamicevents.com/', 'Phone: 360.253.2971');
