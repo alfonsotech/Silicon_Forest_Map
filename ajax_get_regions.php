@@ -35,8 +35,15 @@ Copyright 2015 Todd Brochu
             
           $display_string .= ")<br>";
         }
-        $display_string .= "<input type=\"checkbox\" id=\"checkall\" onclick=\"toggleAllMarkers()\"> {all of the above}";
-        $display_string .= "</form></ul>";
+        $display_string .= "<input type=\"checkbox\" id=\"checkall\" onclick=\"toggleAllMarkers()\"> {all of the above} (";
+
+          //get the number of companies for each region
+          $query = "SELECT COUNT(*) FROM Employers";
+          $qty_result = mysql_query($query) or die(mysql_error());
+          $qty = mysql_fetch_row($qty_result);
+          $display_string .= $qty[0];
+
+        $display_string .= ")</form></ul>";
         echo $display_string;
         mysql_close();
     ?>
