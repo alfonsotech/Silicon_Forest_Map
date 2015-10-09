@@ -309,3 +309,25 @@ INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone
 VALUES(153, 'Extensis', 45.510102, -122.677017, '1800 SW First Ave, Suite 500, Portland, OR 97201', 'Portland - SW', 'http://www.extensis.com/company/careers/', 'Phone: 503.274.2020');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(154, 'Exterro', 45.489543, -122.806667, '4145 SW Watson Ave, Suite 400, Beaverton, OR 97005', 'Beaverton', 'http://exterro.theresumator.com/apply', 'Phone: 503-501-5100');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(155, 'FEI', 45.542902, -122.929018, '5350 NE Dawson Creek Dr, Hillsboro, OR 97124', 'Hillsboro', 'http://www.fei.com/careers/', '(503) 726-7500');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(156, 'fiserv', 45.490226, -122.672816, '4550 SW Macadam Ave, Portland, OR, 97239', 'Portland - SW', 'https://www.fiserv.com/about/careers.aspx', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(157, 'fiserv', 45.544544, -122.879218, '3400 NW John Olsen Pl, Hillsboro, OR, 97124', 'Hillsboro', 'https://www.fiserv.com/about/careers.aspx', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(158, 'Fisher Investments', 45.602874, -122.466146, '5525 NW Fisher Creek Dr, Camas, WA 98607', 'Camas', 'http://www.fisherinvestments.com/about/careers', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(159, 'FJA-US, Inc.', 45.355671, -122.608728, '421 High St, Suite 102, Oregon City, OR, 97045-2202', 'Oregon City', 'http://www.fja-us.com/careers', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(160, 'Flightstats, Inc.', 45.519641, -122.676817, '522 SW 5th Ave, #200, Portland, OR 97204', 'Portland - SW', 'http://www.flightstats.com/company/corporate/careers/', 'Phone: (503) 274-0938');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(161, 'FLIR Systems', 45.320195, -122.764604, '27700 SW Parkway Ave, Wilsonville, OR 97070', 'Wilsonville', 'http://www.flir.com/careers/?id=64835', 'Phone: (503) 498-3547');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(162, 'FMYI', 45.553092, -122.666601, '4080 N Williams Ave, Suite 200, Portland, OR 97227', 'Portland - N', 'https://www.fmyi.com/jobs/', 'Phone: 888.369.4266');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(163, 'ForgeRock', 45.622537, -122.539644, '201 NE Park Plaza Dr, Suite 195 B, Vancouver, WA 98684', 'Vancouver', 'https://www.forgerock.com/about-us/careers/', 'Phone: (360) 229-7105');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(164, 'Forix Web Design', 45.518667, -122.696100, '2140 SW Jefferson St, Suite 200, Portland, OR 97201', 'Portland - SW', 'http://www.forixwebdesign.com/', 'Phone: (503) 764-4123');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(165, 'FRINGE Digital Marketing Agency', 45.629798, -122.669978, '1101 Broadway St, #215, Vancouver, WA 98660', 'Portland - SW', 'http://fringewebpro.com/jobs/', 'Phone: (503) 766-5993');
