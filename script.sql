@@ -261,3 +261,51 @@ INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone
 VALUES(129, 'DW Fritz Automation, Inc.', 45.322986, -122.766665, '27200 SW Parkway Ave, Wilsonville, OR 97070', 'Wilsonville', 'http://dwfritz.com/careers', 'Phone: (503) 598-9393');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(130, 'Dynamic Events, Inc.', 45.670557, -122.623397, '4510 NE 68th Dr, Suite 102, Vancouver, WA 98661', 'Vancouver', 'http://www.dynamicevents.com/', 'Phone: 360.253.2971');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(131, 'E1 Solutions, Inc.', 45.640588, -122.624142, 'PO Box 2485, Vancouver, WA 98668-2485', 'Vancouver', 'http://www.e1solutions.com/careers.php', 'Phone: (360) 356-1290');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(132, 'EasyPower, LLC', 45.376156, -122.756504, '7730 SW Mohawk St, Tualatin, OR 97062', 'Tualatin', 'http://www.easypower.com/company/careers.php', 'Phone: 503-655-5059');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(133, 'eBay', 45.513904, -122.679964, '1400 SW 5th Ave, Portland, OR 97201', 'Portland - SW', 'https://jobs.ebayinc.com/jobs?lng=-122.679964&lat=45.513904&page=1&location=Your%20current%20location', 'Phone: (503) 222-2922');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(134, 'Ecology and Environment, Inc.', 45.521090, -122.676716, '333 SW 5th Ave, Suite 600, Portland OR 97204', 'Portland - SW', 'http://www.ene.com/Careers', 'Phone: (503) 248-5600');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(135, 'Ecova', 45.511583, -122.677458, '100 SW Market St, #200, Portland, OR 97201', 'Portland - SW', 'http://www.ecova.com/about-us/careers.aspx', 'Phone: (503) 525-2700');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(136, 'Electro Scientific, Inc.', 45.524998, -122.819890, '13900 NW Science Park Dr, Portland, OR 97229-5497', 'Portland - NW', 'http://www.esi.com/About/Careers/JobSearch.aspx', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(137, 'Elemental Technologies, Inc.', 45.522344, -122.678353, '225 SW Broadway, Suite 600, Portland, OR 97205', 'Portland - SW', 'http://www.elementaltechnologies.com/company/careers/open-positions', 'Phone: 503-222-3212');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(138, 'Eleven Wireless', 45.522761, -122.682351, '315 SW 11th Ave, Third Floor, Portland, OR 97205', 'Portland - SW', 'http://www.elevenwireless.com/careers/', 'Phone: 503.222.4321');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(139, 'eLynx', 45.453807, -122.793125, '9205 SW Gemini Dr, Suite D, Beaverton, OR 97008', 'Beaverton', 'http://www.elynx.com/company/careers', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(140, 'Emerge Interactive', 45.453807, -122.682974, '412 SW 12th Ave, Portland, OR 97205', 'Portland - SW', 'http://careers.emergeinteractive.com/', 'Phone: 503.922.3483');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(141, 'Emma', 45.522769, -122.660163, '524 E. Burnside St, Suite 510, Portland, OR 97214', 'Portland - SE', 'http://careers.myemma.com/', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(142, 'Engine Yard', 45.519396, -122.682735, '1009 SW Yamhill St, Portland, OR 97205', 'Portland - SW', 'https://www.engineyard.com/company/careers', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(143, 'Enli Health Intelligence', 45.533067, -122.878660, '1920 NW Amberglen Pkwy, #200, Beaverton, OR 97006', 'Beaverton', 'http://www.enli.net/contact-us', 'Phone: 503-858-6041');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(144, 'Entercom Communications', 45.493066, -122.671034, '700 SW Bancroft St, Portland, OR 97223', 'Portland - SW', 'http://www.entercom.com/', 'Phone: (503) 223-1441');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(145, 'Epson', 45.548498, -122.888057, '3950 NW Aloclek Pl, Hillsboro, OR 97124', 'Hillsboro', 'https://www.epi.epson.com/employment/emp_openings.htm', 'Phone: 503.645.1118');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(146, 'Ernst & Young, LLP', 45.523685, -122.682788, '1120 NW Couch St, Suite 425, Portland, OR, 97209', 'Portland - NW', 'http://www.ey.com/US/en/Careers/Experienced/Experienced---Job-search', 'Phone: 503-414-7900');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(147, 'ESRI', 45.521605, -122.677588, '309 SW 6th Ave, #600, Portland, OR 97204', 'Portland - SW', 'http://www.esri.com/careers/main/job-search#@careerPath=@location=US-OR-Portland@jobSearch=', 'Phone: (503) 342-7942');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(148, 'Event 1 Software, Inc.', 45.645699, -122.668299, '3305 Main St, Suite 303, Vancouver, WA, 98663', 'Vancouver', 'http://www.event1software.com/', 'Phone: 360.567.3752');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(149, 'Evisions, Inc.', 45.504150, -122.679609, '2525 SW 1st Ave, Suite 201, Portland, OR 97201', 'Portland - SW', 'https://evisions.com/company/careers/', 'Phone: (503) 297-2108');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(150, 'Evosus / Centerlog, Inc.', 45.676037, -122.669074, '7414 NE Hazel Dell Ave, Suite 100, Vancouver, WA 98665', 'Vancouver', 'http://www.evosus.com/', 'Phone: (866) 235-5103');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(151, 'EVRAZ', 45.628916, -122.780135, '14400 N Rivergate Blvd, Portland, OR 97203', 'Portland - N', 'https://evrazna.com/Company/CareersatEVRAZ/tabid/61/Default.asp', 'Phone: (503) 286-9651');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(152, 'ExpressCopy (Printonia, LLC)', 45.572256, -122.601409, '6623 NE 59th Pl, Portland, OR', 'Portland - N', 'http://www.indeed.com/q-Expresscopy-l-Portland,-OR-jobs.html', 'Phone: (503) 234-4880');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(153, 'Extensis', 45.510102, -122.677017, '1800 SW First Ave, Suite 500, Portland, OR 97201', 'Portland - SW', 'http://www.extensis.com/company/careers/', 'Phone: 503.274.2020');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(154, 'Exterro', 45.489543, -122.806667, '4145 SW Watson Ave, Suite 400, Beaverton, OR 97005', 'Beaverton', 'http://exterro.theresumator.com/apply', 'Phone: 503-501-5100');
