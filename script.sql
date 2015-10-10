@@ -406,4 +406,30 @@ VALUES(201, 'Instructional Technologies', 45.726783, -122.657888, '14511 NE 13th
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(202, 'Integra Telecom', 45.529681, -122.653269, '1201 NE Lloyd Blvd, Suite 750, Portland, OR 97232', 'Portland - NE', 'http://www.integratelecom.com/about/careers/pages/employment-openings.aspx', 'Phone: 503-953-7000');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
-VALUES(203, 'Integra Telecom', 45.598454, -122.485827, '18110 SE 34th St, Building One, Suite 100, Vancouver, WA 98683', 'Vancouver', 'http://www.integratelecom.com/about/careers/pages/employment-openings.aspx', 'Phone: 360-558-6900');
+VALUES(203, 'Integra Telecom (Corporate Office)', 45.598454, -122.485827, '18110 SE 34th St, Building One, Suite 100, Vancouver, WA 98683', 'Vancouver', 'http://www.integratelecom.com/about/careers/pages/employment-openings.aspx', 'Phone: 360-558-6900');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(204, 'Intel', 45.545592, -122.912342, '2501 NW 229th Ave, Hillsboro, OR 97124', 'Hillsboro', 'http://jobs.intel.com/', 'Phone: (503) 696-8080');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(205, 'iovation', 45.522187, -122.676291, '111 SW 5th Ave, Suite 3200, Portland, OR 97204', 'Portland - SW', 'https://www.iovation.com/careers', 'Phone: (503) 224-6010');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(206, 'IP Fabrics', 45.492649, -122.821292, '3720 SW 141st Ave, Suite 201, Beaverton, OR 97005', 'Beaverton', 'http://www.ipfabrics.com/careers/index.html', 'Phone: 503-444-2400');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(207, 'ISSPRO, Inc.', 45.581868, -122.641934, '2515 NE Riverside Way, Portland, OR 97211', 'Portland - NE', 'https://www.isspro.com/index.php', 'Phone: (888) 447-7776');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(208, 'iSupport Software', 45.634297, -122.671181, '110 E 17th St, Vancouver, WA 98663', 'Vancouver', 'http://www.isupport.com/', 'Phone: (360) 397-1000');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(209, 'Ixia', 45.456466, -122.787775, '8770 SW Nimbus Ave, Beaverton, OR 97008', 'Beaverton', 'http://prod.ixiacom.com/about-us/careers-overview/search-our-jobs', 'Phone: (503) 473-8350');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(210, 'Jaguar / Land Rover', 45.533372, -122.686056, '1419 NW 14th Ave, Portland, OR 97209', 'Portland - NW', 'http://goo.gl/adjb2v', 'Phone: (971) 256-9700');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(211, 'Jama Software', 45.516551, -122.674871, '135 SW Taylor, Suite 200, Portland, OR 97204', 'Portland - SW', 'http://www.jamasoftware.com/careers/', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(212, 'Janrain, Inc.', 45.519319, -122.675150, '519 SW 3rd Ave, Portland, OR 97204', 'Portland - SW', 'http://janrain.com/about/careers/', 'Phone: (888) 563-3082');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(213, 'Jenkon', 45.620888, -122.537874, '203 SE Park Plaza Dr, #250, Vancouver, WA 98684', 'Vancouver', 'http://www.jenkon.com/', 'Phone: (360) 256-4400');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(214, 'Jet Reports', 45.446150, -122.787510, '10450 SW Nimbus Ave, Suite B, Beaverton, OR 97223', 'Beaverton', 'http://jetreports.com/about/careers.php', 'Phone: 503-608-3602');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(215, 'Jibe Management and Technology Consulting', 45.416707, -122.728775, '5000 Meadows Rd, Suite 300, Lake Oswego, OR 97035', 'Lake Oswego', 'http://www.jibeconsulting.com/careers', 'Phone: 503-274-0788');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(216, 'Jive Software', 45.522047, -122.680456, '915 SW Stark St, Suite 200, Portland, OR 97205', 'Portland - SW', 'https://www.jivesoftware.com/about-jive/careers/job-listings/', 'Phone: 877-495-3700');
