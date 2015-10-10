@@ -149,7 +149,8 @@ function getCompaniesByRegion(region) {
 function initMap() {
   //Downtown Portland: 45.5200, -122.6819
   //132nd & SE Clatsop: 45.461277, -122.527469
-  var myLatlng = new google.maps.LatLng(45.461277, -122.527469);
+  //145th & SE Grant: 45.506947, -122.514070
+  var myLatlng = new google.maps.LatLng(45.506947, -122.514070);
 
   map = new google.maps.Map(document.getElementById('map'), {
     center: myLatlng,
