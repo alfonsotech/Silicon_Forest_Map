@@ -433,3 +433,13 @@ INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone
 VALUES(215, 'Jibe Management and Technology Consulting', 45.416707, -122.728775, '5000 Meadows Rd, Suite 300, Lake Oswego, OR 97035', 'Lake Oswego', 'http://www.jibeconsulting.com/careers', 'Phone: 503-274-0788');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(216, 'Jive Software', 45.522047, -122.680456, '915 SW Stark St, Suite 200, Portland, OR 97205', 'Portland - SW', 'https://www.jivesoftware.com/about-jive/careers/job-listings/', 'Phone: 877-495-3700');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(217, 'Educational Policy Improvement Center (EPIC)', 45.522187, -122.676291, '111 SW 5th Ave, Suite 2100, Portland, OR 97204', 'Portland - SW', 'http://www.epiconline.org/aboutus/join-epic/', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(218, 'Kaiser Permanente', 45.417167, -122.737914, '5800 SW Meadows Rd, Lake Oswego, OR 97035', 'Lake Oswego', 'https://kp.taleo.net/careersection/external/moresearch.ftl?lang=en', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(219, 'Kavi Corporation', 45.513832, -122.663101, '225 SE Main St, Portland, OR 97214', 'Portland - SE', 'http://www.kavi.com/about/careers/', 'Phone: (503) 234-4220');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(220, 'KEEN, Inc.', 45.526590, -122.684299, '515 NW 13th Ave, Portland, OR 97209', 'Portland - NW', 'http://www.keenfootwear.com/jointeam.aspx', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(221, 'Klein Instruments, Inc.', 45.404149, -122.760976, '8194 SW Durham Rd, Tigard, OR 97224 ', 'Tigard', 'http://www.kleininstruments.com/', 'Phone: (503) 746-5354');
