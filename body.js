@@ -150,10 +150,10 @@ function initMap() {
   //Downtown Portland: 45.5200, -122.6819
   //132nd & SE Clatsop: 45.461277, -122.527469
   //145th & SE Grant: 45.506947, -122.514070
-  var myLatlng = new google.maps.LatLng(45.506947, -122.514070);
+  var origin = new google.maps.LatLng(45.506947, -122.514070);
 
   map = new google.maps.Map(document.getElementById('map'), {
-    center: myLatlng,
+    center: origin,
     zoom: 10
   });
     
@@ -182,20 +182,28 @@ function clearCheckboxes() {
 }
 
 /**
- *renders the markers on the map
- *@param locations:array of data points, map:map
- *@return map
+ *creates a marker for each location
+ *@param none
+ *@return none
  */
 function createMarkers() {
+    var origin = new google.maps.LatLng(45.506947, -122.514070);
+    
     for (i=0; i<locations.length; i++) {
         var marker = new google.maps.Marker({
                     position: new google.maps.LatLng(locations[i][2], locations[i][3]),
                     map: map,
                     icon: 'marker.png',
-                    title: locations[i][1] + "\n" + locations[i][4] + "\n" + locations[i][7]
+                    title: locations[i][1] + "\n" + locations[i][4] + "\n" + locations[i][7],
+                    link: locations[i][6]
            });
+        
+        marker.addListener('click', function() {
+            window.open(this.link);
+        });
+        
         markers.push(marker);
-        markers[i].setVisible(false); 
+        markers[i].setVisible(false);
     }
 }
 
