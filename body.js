@@ -188,6 +188,7 @@ function clearCheckboxes() {
  */
 function createMarkers() {
     var origin = new google.maps.LatLng(45.506947, -122.514070);
+    var isZoomed = 0;
     
     for (i=0; i<locations.length; i++) {
         var marker = new google.maps.Marker({
@@ -198,8 +199,17 @@ function createMarkers() {
                     link: locations[i][6]
            });
         
-        marker.addListener('click', function() {
-            window.open(this.link);
+        marker.addListener('click', function() {   
+            if (isZoomed == 0) {
+                map.setZoom(18);
+                map.setCenter(new google.maps.LatLng(this.position.J, this.position.M));
+                window.open(this.link);
+                isZoomed = 1;
+            } else {
+                map.setZoom(10);
+                map.setCenter(origin);
+                isZoomed = 0;
+            }
         });
         
         markers.push(marker);
