@@ -443,3 +443,11 @@ INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone
 VALUES(220, 'KEEN, Inc.', 45.526590, -122.684299, '515 NW 13th Ave, Portland, OR 97209', 'Portland - NW', 'http://www.keenfootwear.com/jointeam.aspx', null);
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(221, 'Klein Instruments, Inc.', 45.404149, -122.760976, '8194 SW Durham Rd, Tigard, OR 97224 ', 'Tigard', 'http://www.kleininstruments.com/', 'Phone: (503) 746-5354');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(222, 'Kloudcoders', 45.523062, -122.676482, 'Portland, OR', '{unspecified region}', 'https://angel.co/kloudcoders/jobs', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(223, 'Knock Software', 45.523062, -122.676482, 'Portland, OR', '{unspecified region}', 'http://www.knocktounlock.com/', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(224, 'Kosmos Central', 45.524596, -122.698845, '2310 NW Everett St, Portland, OR 97205', 'Portland - NW', 'http://www.kosmoscentral.com/careers', 'Phone: 888-256-7667');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(225, 'Kuni Automotive', 45.615840, -122.489371, '17800 SE Mill Plain Blvd #190, Vancouver, WA 98683', 'Vancouver', 'https://www1.apply2jobs.com/kuniauto/ProfExt/index.cfm?fuseaction=mExternal.showSearchInterface', 'Phone: (360) 553-7350');
