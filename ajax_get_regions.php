@@ -21,7 +21,7 @@ Copyright 2015 Todd Brochu
         $qry_result = mysql_query($query) or die(mysql_error());
 
         //Build Result String
-        $display_string = "<ul><strong>Select a region:</strong><br><br><form action=\"\">";
+        $display_string = "<ul><form action=\"\">";
 
         // Insert a new row in the table for each person returned
         while($row = mysql_fetch_array($qry_result)){

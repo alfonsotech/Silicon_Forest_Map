@@ -11,40 +11,64 @@ html, body {
     line-height: 1.5;
 }
 
-.left_panels {
-    float: left;
-    width: 24%;
+.left-panels {
     background-color: #e6e7e8;
 }
 
+.navbar {
+    left: 0;
+    width: 354px;
+    height: 40px;
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+    line-height: 1;
+}
+
+#left-menu-header {
+    width: 354px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #01a8d2;
+    border-bottom-color: #e6e7e8;
+    border-right-color: #e6e7e8;
+    padding-bottom: 8px;
+    text-align: left;
+    line-height: 1;
+}
+
 #regions {
-    width: 350px;
-    height: 256px;
+    width: 351px;
+    height: 180px;
     overflow-y: scroll;
     line-height: 15px;
     border-style: solid;
     border-width: 3px;
+    border-bottom-width: 1px;
     border-color: #01a8d2;
+    border-top-color: #e6e7e8;
 }
 
 #results {
-    width: 310px;
-    height: 291px;
+    width: 311px;
+    height: 302px;
     overflow-y: auto;
     line-height: 22px;
     border-style: solid;
     border-width: 3px;
-    border-top-color: white;
-    border-left-color: white;
-    border-right-color: white;
+    border-color: #01a8d2;
+    border-top-color: #e6e7e8;
     border-bottom-color: #01a8d2; 
     padding-left: 40px;
     padding-bottom: 20px;           
 }
 
 #map {
-    float: right;
-    height: 92%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 99%;
     width: 1006px;
     border-style: solid;
     border-width: 3px;
