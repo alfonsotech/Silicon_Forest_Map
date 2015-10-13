@@ -304,7 +304,7 @@ VALUES(150, 'Evosus / Centerlog, Inc.', 45.676037, -122.669074, '7414 NE Hazel D
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(151, 'EVRAZ', 45.628916, -122.780135, '14400 N Rivergate Blvd, Portland, OR 97203', 'Portland - N', 'https://evrazna.com/Company/CareersatEVRAZ/tabid/61/Default.asp', 'Phone: (503) 286-9651');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
-VALUES(152, 'ExpressCopy (Printonia, LLC)', 45.572256, -122.601409, '6623 NE 59th Pl, Portland, OR', 'Portland - N', 'http://www.indeed.com/q-Expresscopy-l-Portland,-OR-jobs.html', 'Phone: (503) 234-4880');
+VALUES(152, 'ExpressCopy (Printonia, LLC)', 45.572256, -122.601409, '6623 NE 59th Pl, Portland, OR', 'Portland - NE', 'http://www.indeed.com/q-Expresscopy-l-Portland,-OR-jobs.html', 'Phone: (503) 234-4880');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(153, 'Extensis', 45.510102, -122.677017, '1800 SW First Ave, Suite 500, Portland, OR 97201', 'Portland - SW', 'http://www.extensis.com/company/careers/', 'Phone: 503.274.2020');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
@@ -330,7 +330,7 @@ VALUES(163, 'ForgeRock', 45.622537, -122.539644, '201 NE Park Plaza Dr, Suite 19
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(164, 'Forix Web Design', 45.518667, -122.696100, '2140 SW Jefferson St, Suite 200, Portland, OR 97201', 'Portland - SW', 'http://www.forixwebdesign.com/', 'Phone: (503) 764-4123');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
-VALUES(165, 'FRINGE Digital Marketing Agency', 45.629798, -122.669978, '1101 Broadway St, #215, Vancouver, WA 98660', 'Portland - SW', 'http://fringewebpro.com/jobs/', 'Phone: (503) 766-5993');
+VALUES(165, 'FRINGE Digital Marketing Agency', 45.629798, -122.669978, '1101 Broadway St, #215, Vancouver, WA 98660', 'Vancouver', 'http://fringewebpro.com/jobs/', 'Phone: (503) 766-5993');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(166, 'Galois', 45.520752, -122.677937, '421 SW 6th Ave, Suite 300, Portland, OR 97204', 'Portland - SW', 'http://galois-inc.hiringthing.com/', 'Phone: 503.626.6616');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
