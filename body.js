@@ -196,13 +196,15 @@ function createMarkers() {
                     map: map,
                     icon: 'marker.png',
                     title: locations[i][1] + "\n" + locations[i][4] + "\n" + locations[i][7],
-                    link: locations[i][6]
+                    link: locations[i][6],
+                    lat: locations[i][2],
+                    lng: locations[i][3]
            });
         
         marker.addListener('click', function() {   
             if (isZoomed == 0) {
                 map.setZoom(18);
-                map.setCenter(new google.maps.LatLng(this.position.J, this.position.M));
+                map.setCenter(new google.maps.LatLng(this.lat,this.lng));
                 window.open(this.link);
                 isZoomed = 1;
             } else {
