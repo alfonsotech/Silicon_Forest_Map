@@ -687,3 +687,35 @@ INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone
 VALUES(342, 'Qorvo', 45.539874, -122.936915, '2300 NE Brookwood Pkwy, Hillsboro, OR 97124', 'Hillsboro', 'http://www.qorvo.com/job-search', 'Phone: 503.615.9000');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(343, 'Quantum Spatial', 45.520752, -122.677937, '421 SW 6th Ave, #800, Portland, OR 97204', 'Portland - SW', 'https://quantumspatial.com/about-us/our-team', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(344, 'Radisys', 45.545148, -122.929750, '5435 NE Dawson Creek Dr, Hillsboro, OR 97214', 'Hillsboro', 'http://www.radisys.com/company/careers/', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(345, 'Rareheron', 45.523062, -122.676482, 'Portland, OR', '{unspecified region}', 'http://www.rareheron.com/', 'Phone: 503-292-0953');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(346, 'Reach Technology, Inc.', 45.420963, -122.664729, '155 B Ave, Suite 200, Lake Oswego, OR 97034', 'Lake Oswego', 'http://www.reachtech.com/about/jobs/', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(347, 'Renew Financial', 45.520705, -122.677397, '400 SW 6th Ave, Suite 902, Portland, OR 97204', 'Portland - SW', 'http://jobs.jobvite.com/careers/renewfund/jobs', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(348, 'Renaissance Learning, Inc.', 45.654059, -122.593723, '7710 NE Greenwood Dr, Suite 200, Vancouver, WA 98662', 'Vancouver', 'http://www.renaissance.com/', 'Phone: (360) 944-8996');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(349, 'Rentrak (Corporate HQ)', 45.579317, -122.570902, '7700 NE Ambassador Place, 3rd Floor, Portland, OR 97220-1393', 'Portland - NE', 'http://www.rentrak.com/section/career_opportunities/career_opportunities.html', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(350, 'Rentrak', 45.519274, -122.675357, '529 SW Third Ave, Suite 400, Portland, OR 97204', 'Portland - SW', 'http://www.rentrak.com/section/career_opportunities/career_opportunities.html', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(351, 'Reservoir Labs', 45.491027, -122.671294, '4380 SW Macadam Ave, Suite 365, Portland, OR 97239', 'Portland - SW', 'https://www.reservoir.com/company/careers/', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(352, 'Revcaster', 45.516088, -122.674894, '121 SW Salmon St, Suite 1100, Portland, OR 97204', 'Portland - SW', 'https://revcaster.com/jobs', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(353, 'R/GA', 45.526136, -122.685155, '420 NW 14th Ave, Portland, OR 97209', 'Portland - NW', 'http://www.rga.com/careers/apply/job-openings/', 'Phone: 503-734-2320');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(354, 'Ride With GPS', 45.528479, -122.642950, '2222 NE Oregon St, Portland, OR 97232', 'Portland - NW', 'http://ridewithgps.com/about', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(355, 'Right! Systems, Inc.', 45.574461, -122.563935, '9600 NE Cascades Pkwy #180, Portland, OR 97220', 'Portland - NE', 'http://www.rightsys.com/careers', 'Phone: (503) 972-2639');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(356, 'Rockwell Collins', 45.332288, -122.776500, '9565 SW Ridder Rd, Wilsonville, OR 97070', 'Wilsonville', 'https://www.rockwellcollins.com/Careers/Job_Openings.aspx', 'Phone: (503) 570-2674');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(357, 'Rockwell Collins (Heads Up Guidance Systems)', 45.322453, -122.764646, '27300 SW Parkway Ave, Wilsonville, OR 97070', 'Wilsonville', 'https://www.rockwellcollins.com/Careers/Job_Openings.aspx', 'Phone: (503) 404-6888');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(358, 'Rohde & Schwarz', 45.453072, -122.789058, '9255 SW Nimbus Ave, Beaverton, OR 97008', 'Beaverton', 'http://www.career.rohde-schwarz.us/en/career/start/', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(359, 'Rumblefish', 45.518872, -122.664245, '107 SE Washington St, Suite 700, Portland, OR 97214', 'Portland - SE', 'http://rumblefish.com/careers/', null);
