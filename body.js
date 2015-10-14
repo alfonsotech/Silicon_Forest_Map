@@ -205,7 +205,6 @@ function createMarkers() {
             if (isZoomed == 0) {
                 map.setZoom(18);
                 map.setCenter(new google.maps.LatLng(this.lat,this.lng));
-                window.open(this.link);
                 isZoomed = 1;
             } else {
                 map.setZoom(10);
