@@ -737,3 +737,67 @@ INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone
 VALUES(367, 'SEH America (Shin-Etsu)', 45.650388, -122.553559, '4111 NE 112th Ave, Vancouver, WA 98682', 'Vancouver', 'http://www.sehamerica.com/section.cfm?wSectionID=4822', 'Phone: (360) 883-7000');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(368, 'Selectron', 45.430686, -122.745155, '12323 SW 66th Ave, Portland, OR 97223', 'Portland - SW', 'http://selectron.website/careers', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(369, 'CareOregon', 45.430686, -122.745155, '315 SW 5th Ave, #900, Portland, OR 97204', 'Portland - SW', 'http://www.careoregon.org/AboutUs/Careers.aspx', 'Phone: (503) 416-4100');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(370, 'SellerActive / Bookbyte', 44.912747, -123.026041, '2800 Pringle Rd SE, Salem, OR 97302', 'Salem', 'http://www.selleractive.com/', 'Phone: (800) 545-7385');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(371, 'Sensory', 45.522447, -122.693658, '735 SW 20th Pl, Suite 120, Portland OR 97205', 'Portland - SW', 'http://www.sensoryinc.com/company/employment.html', 'Phone: 503-546-6378');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(372, 'Serena Software, Inc.', 45.536619, -122.885304, '2345 NW Amberbrook Drive, Suite 200, Hillsboro, OR 97006', 'Hillsboro', 'http://www.serena.com/index.php/en/company/careers/us-job-opportunities/', 'Phone: 800-457-3736');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(373, 'Serps', 45.528388, -122.685578, '1410 NW Johnson St, Portland, OR 97209', 'Portland - NW', 'https://serps.com/', 'Phone: 503-683-3470');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(374, 'Sharp Laboratories of America', 45.593212, -122.460845, '5750 NW Pacific Rim Blvd, Camas, WA 98607', 'Camas', 'http://www.sharplabs.com/index.php/career/career-opportunities', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(375, 'ShiftWise', 45.510102, -122.677017, '1800 SW 1st Ave, #510, Portland, OR 97201', 'Portland - SW', 'http://www.shiftwise.com/about-us/career-opportunities', 'Phone: (503) 548-2030');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(376, 'SIGMADESIGN', 45.634652, -122.670769, '1714 Broadway St, Vancouver, WA 98663', 'Vancouver', 'http://www.sigmadzn.com/about-product-design-engineering/careers/', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(377, 'Simple (Simple Finance Technology Corp.)', 45.524347, -122.677939, '720 NW Davis St, Suite 400, Portland, OR', 'Portland - NW', 'https://www.simple.com/careers', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(378, 'SingleMind Consulting', 45.538153, -122.696552, '2100 NW 22nd Ave, Suite A, Portland, OR 97210', 'Portland - NW', 'http://singlemindconsulting.com/', 'Phone: 503.342.8270');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(379, 'Sirius Computer Solutions', 45.418422, -122.736948, '5885 Meadows Rd, #610, Lake Oswego, OR 97035', 'Lake Oswego', 'http://mysiriuszone.com/index.php?option=com_content&view=article&id=250&Itemid=116', 'Phone: (503) 597-6600');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(380, 'Site9, Inc. / Protoshare', 45.519709, -122.679190, '610 SW Alder St, Suite 515, Portland, OR 97205', 'Portland - SW', 'http://www.protoshare.com/', 'Phone: 877.938.9834');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(381, 'Sitka Technology Group', 45.521605, -122.677588, '309 SW 6th Ave Suite 575, Portland, OR 97204', 'Portland - SW', 'http://www.sitkatech.com/about-us/careers/', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(382, 'Sjobeck Integration Professionals', 45.564668, -122.669272, '5751 N Vancouver Ave, Suite B, Portland, OR, 97217', 'Portland - N', 'http://www.sjobeck.com/', 'Phone: 503.283.7779');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(383, 'Skyward', 45.520369, -122.671264, '233 SW Naito Pkwy, Portland, OR 97204', 'Portland - SW', 'http://skyward.io/careers/', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(384, 'Slalom Consulting', 45.518428, -122.680452, '805 SW Broadway, Suite 2500, Portland, OR 97205', 'Portland - SW', 'https://www.slalom.com/join/opportunities', 'Phone: 503-552-9200');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(385, 'Smarsh', 45.518046, -122.679408, '851 SW 6th Ave, #800, Portland, OR 97204', 'Portland - SW', 'http://www.smarsh.com/careers/jobs', 'Phone: (503) 946-5980');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(386, 'SmartRG, Inc.', 45.616585, -122.650775, '501 SE Columbia Shores Blvd, Suite 500, Vancouver, WA 98661', 'Vancouver', 'http://smartrg.com/careers/', 'Phone: 360-859-1780');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(387, 'Software Technology Group, Inc.', 45.489424, -122.788455, '4240 SW 109th Ave, Beaverton, OR 97005', 'Beaverton', 'http://www.softwaretechnology.com/Careers-Software-Technology-Group-Portland-Oregon.aspx', 'Phone: (503) 672-9245');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(388, 'Somerset Wealth Strategies, LLC', 45.490086, -122.674441, '4600 SW Kelly Ave, Portland, OR 97239', 'Portland - SW', 'http://www.somersetwealthstrategies.com/', 'Phone: 503-595-1333');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(389, 'Speak!', 45.522694, -122.990684, '205 E Main St, Suite 3, Hillsboro, OR 97124', 'Hillsboro', 'http://speakagency.com/', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(390, 'Speridian Technologies, LLC', 45.518624, -122.683498, '1020 SW Taylor St, Suite 620, Portland, OR 97205', 'Portland - SW', 'http://www.speridian.com/careers.php', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(391, 'Sports Car Market Magazine', 45.523062, -122.676482, 'Portland, OR', 'Portland - unspecified address', 'http://www.sportscarmarket.com/', 'Phone: 503.261.0555');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(392, 'Squarespace', 45.524976, -122.675300, '222 NW 5th Ave, 4th Floor, Portland, OR 97209', 'Portland - NW', 'http://www.squarespace.com/about/careers', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(393, 'Steelcase', 45.535900, -122.687384, '1800 NW 16th Ave, Portland, OR 97209', 'Portland - NW', 'https://steelcase-openhire.silkroad.com/epostings/index.cfm?fuseaction=app.allpositions&company_id=17072&version=1', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(394, 'Stevens Water Monitoring Systems', 45.568576, -122.536211, '12067 NE Glenn Widing Dr, Suite 106, Portland, OR 97220', 'Portland - NE', 'http://www.stevenswater.com/', 'Phone: (503) 445-8000');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(395, 'Stilwell Baker Electronic Engineering and Manufacturing', 45.401361, -122.742038, '6405 Rosewood St, Bldg A, Suite A, Lake Oswego, OR 97035', 'Lake Oswego', 'http://www.stilwellbaker.com/company/careers/current-job-openings', 'Phone: (503) 210-2100');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(396, 'Subtext', 45.528479, -122.642950, '2222 NE Oregon St, Suite 211, Portland, OR 97232', 'Portland - NE', 'http://www.subtextdigital.com/studio-portland-oregon-web-design-agency/#careers-section', 'Phone: 503.946.8369');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(397, 'Succeed Management Solutions, LLC', 45.418090, -122.717152, '4000 Kruse Way Pl, Bldg 1, Suite 310, Lake Oswego, OR 97035', 'Lake Oswego', 'http://succeedms.com/about-us/careers/', 'Phone: (503) 582-0190');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(398, 'Summit Semicondutor', 45.532033, -122.888260, '20575 NW Von Neumann Dr, Suite 100, Beaverton, OR 97006', 'Beaverton', 'http://summitsemi.com/', 'Phone: 503-615-7700');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(399, 'SureID, Inc.', 45.561984, -122.918044, '5800 NW Pinefarm Pl, Hillsboro, OR 97124', 'Hillsboro', 'http://www.eidpassport.com/about-us/careers', 'Phone: 503-924-5300');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(400, 'SurveyMonkey', 45.522187, -122.676291, '111 SW 5th Ave, Suite 1600, Portland, OR 97204 ', 'Portland - SW', 'https://www.surveymonkey.com/mp/jobs/', null);
