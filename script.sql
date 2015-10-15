@@ -800,4 +800,32 @@ VALUES(398, 'Summit Semicondutor', 45.532033, -122.888260, '20575 NW Von Neumann
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(399, 'SureID, Inc.', 45.561984, -122.918044, '5800 NW Pinefarm Pl, Hillsboro, OR 97124', 'Hillsboro', 'http://www.eidpassport.com/about-us/careers', 'Phone: 503-924-5300');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
-VALUES(400, 'SurveyMonkey', 45.522187, -122.676291, '111 SW 5th Ave, Suite 1600, Portland, OR 97204 ', 'Portland - SW', 'https://www.surveymonkey.com/mp/jobs/', null);
+VALUES(400, 'SurveyMonkey', 45.522187, -122.676291, '111 SW 5th Ave, Suite 1600, Portland, OR 97204', 'Portland - SW', 'https://www.surveymonkey.com/mp/jobs/', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(401, 'Sweetspot', 45.518630, -122.682167, '919 SW Taylor St, Suite 500, Portland, OR 97205', 'Portland - SW', 'https://www.sweetspotdiabetes.com/', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(402, 'Syn-Apps', 45.526292, -122.682486, '1100 NW Glisan St, Portland, OR 97209', 'Portland - NW', 'http://www.syn-apps.com/company/careers/current/', 'Phone: (480) 664-6071');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(403, 'Sync Interactive', 45.553433, -122.589449, '4221 NE 72nd Ave, Portland, OR 97218', 'Portland - NE', 'http://www.syncinteractive.com/', 'Phone: (503) 922-1211');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(404, 'Synopsys', 45.533654, -122.903263, '2025 NW Cornelius Pass Road, Building A, Hillsboro, OR 97124', 'Hillsboro', 'http://www.synopsys.com/company/synopsyscareers/Pages/default.aspx', 'Phone: (503) 547-6000');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(405, 'TechnoSolutions Corp.', 45.718809, -122.658130, '1308 NE 134th St, Suite A, Vancouver, WA 98685', 'Vancouver', 'http://www.technosolutions.com/index.html', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(406, 'Tektronix', 45.499188, -122.823244, '14150 SW Karl Braun Dr, Beaverton, OR 97077', 'Beaverton', 'http://www.tek.com/careers/job-search', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(407, 'Telios Systems Co.', 45.504093, -122.561840, '9850 SE Division St, Portland, OR 97266', 'Portland - SE', 'http://www.tek.com/careers/job-search', 'Phone: (503) 760-6697');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(408, 'Tenant Technologies, Inc.', 45.343311, -122.657162, '1665 Willamette Falls Dr, West Linn, OR 97068', 'West Linn', 'http://www.tenanttech.com/', 'Phone: 503-233-2125');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(409, 'The Dyrt', 45.513904, -122.679964, '1400 SW 5th Ave, 3rd Floor, Portland, OR 97201', 'Portland - SW', 'http://blog.thedyrt.com/working-at-the-dyrt/', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(410, 'The School Co. / Career Development Software', 45.634513, -122.615856, '5305 E 18th St, Suite 141, Vancouver, WA 98661', 'Vancouver', 'http://www.schoolco.com/', 'Phone: 800-543-0998');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(411, 'The Standard Insurance', 45.515945, -122.679733, '1100 SW 6th Ave, Portland, OR 97204', 'Portland - SW', 'https://www.standard.com/careers/', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(412, 'Thetus Corporation', 45.521235, -122.677916, '326 SW Broadway, Portland, OR 97205', 'Portland - SW', 'https://www.thetus.com/', 'Phone: 503-294-0900');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(413, 'ThinkShout, Inc.', 45.526513, -122.674833, '433 NW 4th Ave, Suite 100, Portland, OR 97209', 'Portland - NW', 'http://thinkshout.com/careers/', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(414, 'Tivix, Inc.', 45.526513, -122.707243, '2929 SW Multnomah Blvd, Suite 306, Portland, OR 97219', 'Portland - SW', 'http://www.tivix.com/careers/', null);
