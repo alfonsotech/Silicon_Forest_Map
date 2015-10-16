@@ -708,7 +708,7 @@ VALUES(352, 'Revcaster', 45.516088, -122.674894, '121 SW Salmon St, Suite 1100, 
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(353, 'R/GA', 45.526136, -122.685155, '420 NW 14th Ave, Portland, OR 97209', 'Portland - NW', 'http://www.rga.com/careers/apply/job-openings/', 'Phone: 503-734-2320');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
-VALUES(354, 'Ride With GPS', 45.528479, -122.642950, '2222 NE Oregon St, Portland, OR 97232', 'Portland - NW', 'http://ridewithgps.com/about', null);
+VALUES(354, 'Ride With GPS', 45.528479, -122.642950, '2222 NE Oregon St, Portland, OR 97232', 'Portland - NE', 'http://ridewithgps.com/about', null);
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(355, 'Right! Systems, Inc.', 45.574461, -122.563935, '9600 NE Cascades Pkwy #180, Portland, OR 97220', 'Portland - NE', 'http://www.rightsys.com/careers', 'Phone: (503) 972-2639');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
@@ -927,3 +927,11 @@ INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone
 VALUES(462, 'Ziba Design', 45.530627, -122.680121, '1044 NW 9th Ave Portland, OR 97209', 'Portland - NW', 'http://www.ziba.com/careers', 'Phone: 503.223.9606');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(463, 'Zoom+ Performance Health Insurance', 45.542264, -122.873373, '19075 NW Tanasbourne Dr, Suite 200, Hillsboro, OR 97124', 'Hillsboro', 'https://www.zoomcare.com/careers/open-positions', 'Phone: (503) 684-8252');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(464, 'Media Mechanic', 45.397489, -122.735787, '5775 Jean Rd, Suite 220, Lake Oswego, OR 97035', 'Lake Oswego', 'http://www.mediamechanic.net/', 'Phone: (503) 908-1265');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(465, 'SnapNames.com', 45.510102, -122.677017, '1800 SW 1st Ave, #440, Portland, OR 97201', 'Portland - SW', 'https://www.snapnames.com/', 'Phone: (503) 219-9990');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(466, 'Washington County Consolidated Communications Agency (WCCCA)', 45.536665, -122.860294, '17911 NW Evergreen Pkwy, Beaverton, OR 97006', 'Beaverton', 'http://www.wccca.com/employment/current/', 'Phone: 503-690-4911');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(467, 'Quiktrak', 45.450376, -122.788898, '9700 SW Nimbus Ave, Beaverton, OR 97008', 'Beaverton', 'http://www.quiktrak.com/web/DetailPage.aspx?Page=About_Join', 'Phone: (800) 927-8725');
