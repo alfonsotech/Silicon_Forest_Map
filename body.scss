@@ -65,7 +65,9 @@ html, body {
 #results {
     width: 311px;
     height: 302px;
+    overflow-x: auto;
     overflow-y: auto;
+    white-space: nowrap;
     line-height: 22px;
     border-style: solid;
     border-width: 3px;
