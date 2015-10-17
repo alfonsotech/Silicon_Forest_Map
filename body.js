@@ -13,6 +13,8 @@ var myStyle = {
     fillColor: "#AAAAAA",
     fillOpacity: 0.5
   };
+var zoomFactor = 9;
+var currentCenter;
 
 /**
  *gets a list of regions from the database
@@ -102,7 +104,7 @@ function getAllCompanies() {
 }
 
 /**
- *calls the toggleMarkers method
+ *calls the toggleMarkers and zoomToRegion methods
  *displays in the Results div a list of companies
  *within the specified region
  *@param region:string
@@ -110,6 +112,7 @@ function getAllCompanies() {
  */
 function getCompaniesByRegion(region) {
     toggleMarkers(region);
+    zoomToRegion(region);
     
     var ajaxRequest;  //enable AJAX
     try{
@@ -150,11 +153,13 @@ function initMap() {
   //Downtown Portland: 45.5200, -122.6819
   //132nd & SE Clatsop: 45.461277, -122.527469
   //145th & SE Grant: 45.506947, -122.514070
-  var origin = new google.maps.LatLng(45.506947, -122.514070);
+  //se 172nd ave & se rock creek ct, clackamas: 45.421765, -122.485646
+  currentCenter = new google.maps.LatLng(45.421765, -122.485646);
+    
 
   map = new google.maps.Map(document.getElementById('map'), {
-    center: origin,
-    zoom: 10
+    center: currentCenter,
+    zoom: zoomFactor
   });
     
   map.setMapTypeId(google.maps.MapTypeId.SATELLITE);
@@ -187,7 +192,7 @@ function clearCheckboxes() {
  *@return none
  */
 function createMarkers() {
-    var origin = new google.maps.LatLng(45.506947, -122.514070);
+    currentCenter = new google.maps.LatLng(45.421765, -122.485646);
     var isZoomed = 0;
     
     for (i=0; i<locations.length; i++) {
@@ -196,19 +201,21 @@ function createMarkers() {
                     map: map,
                     icon: 'marker.png',
                     title: locations[i][1] + "\n" + locations[i][4] + "\n" + locations[i][7],
-                    link: locations[i][6],
                     lat: locations[i][2],
-                    lng: locations[i][3]
+                    lng: locations[i][3],
+                    regn: locations[i][5],
+                    link: locations[i][6]
            });
         
-        marker.addListener('click', function() {   
+        marker.addListener('click', function() { 
             if (isZoomed == 0) {
-                map.setZoom(18);
+                zoomFactor = 18;
+                map.setZoom(zoomFactor);
                 map.setCenter(new google.maps.LatLng(this.lat,this.lng));
                 isZoomed = 1;
             } else {
-                map.setZoom(10);
-                map.setCenter(origin);
+                //map.setZoom(10);
+                zoomToRegion(this.regn);
                 isZoomed = 0;
             }
         });
@@ -304,6 +311,8 @@ function toggleMarkers(value) {
  * @return none
  */
 function toggleAllMarkers() {
+    zoomToRegion("{all of the above}");
+    
     //update the checkmarks on the list
     var list = document.getElementsByName("checkbox");
     var all = document.getElementById("checkall");
@@ -376,4 +385,41 @@ function clearResultsDiv() {
  */
 function showResultsDiv() {
     document.getElementById('results').style.display = 'block';
+}
+
+/**
+ * Zooms to the selected region
+ * @param region:string
+ * @return none
+ */
+function zoomToRegion(region) {
+    var ajaxRequest;
+    try{
+        ajaxRequest = new XMLHttpRequest();
+    } catch (e){
+        try{
+         ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP");
+        } catch (e) {
+            try{
+                ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP");
+            } catch (e){
+                alert("AJAX request error");
+                return false;
+              }
+          }
+       }
+    
+   ajaxRequest.onreadystatechange = function(){
+      if(ajaxRequest.readyState == 4){
+         var result = ajaxRequest.responseText.substring(96, ajaxRequest.responseText.length-16);
+         var array = result.split(" ");
+         zoomFactor = +array[0];
+         map.setZoom(zoomFactor);
+         map.setCenter(new google.maps.LatLng(array[1], array[2]));
+      }
+   }
+
+   var queryString = "?region=" + region;
+   ajaxRequest.open("GET", "ajax_get_zoom_parameters.php"+queryString, true);
+   ajaxRequest.send(null);
 }

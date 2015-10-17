@@ -7,22 +7,23 @@ Copyright 2015 Todd Brochu
 <body>
     <?php
         include 'credentials.php';
-
+        
         mysql_connect($dbhost, $dbuser, $dbpass);
         mysql_select_db($dbname) or die(mysql_error());
 
         $region = $_GET['region'];
         $region = mysql_real_escape_string($region);
 
-        $query = "SELECT * FROM Employers WHERE region = '$region'";
-        $qry_result = mysql_query($query) or die(mysql_error());
+        $query = "SELECT zoom, latitude, longitude FROM Regions WHERE region = '$region'";
+        $result = mysql_query($query) or die(mysql_error());
 
-        $display_string = "";
-
-        while($row = mysql_fetch_array($qry_result)){
-          $display_string .= "<a href=$row[url]>$row[name]</a><br/>";
-        }
-
+        $row = mysql_fetch_row($result);
+        $display_string = $row[0];
+        $display_string .= " ";
+        $display_string .= $row[1];
+        $display_string .= " ";
+        $display_string .= $row[2];
+         
         echo $display_string;
         mysql_close();
     ?>

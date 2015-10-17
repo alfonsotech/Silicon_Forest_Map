@@ -8,22 +8,14 @@ Copyright 2015 Todd Brochu
     <?php
         include 'credentials.php';
 
-        //Connect to MySQL server
         mysql_connect($dbhost, $dbuser, $dbpass);
-
-        //Select database
         mysql_select_db($dbname) or die(mysql_error());
 
-        //build query
         $query = "SELECT name FROM Employers ORDER BY name";
-
-        //Execute query
         $qry_result = mysql_query($query) or die(mysql_error());
 
-        //Build Result String
         $display_string = "";
 
-        // Insert a new row in the table for each person returned
         while($row = mysql_fetch_array($qry_result)){
           $display_string .= "<a href=$row[url]>$row[name]</a><br/>";
         }

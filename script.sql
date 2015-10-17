@@ -1,4 +1,63 @@
 USE mydb;
+DROP TABLE Regions;
+CREATE TABLE Regions(region varchar(40), zoom int(2), latitude decimal(9,6), longitude decimal(9,6), PRIMARY KEY(region));
+INSERT INTO Regions(region, zoom, latitude, longitude)
+VALUES('Beaverton', 12, 45.499926, -122.835172);
+INSERT INTO Regions(region, zoom, latitude, longitude)
+VALUES('Camas', 13, 45.610705, -122.450320);
+INSERT INTO Regions(region, zoom, latitude, longitude)
+VALUES('Canby', 13, 45.263830, -122.681318);
+INSERT INTO Regions(region, zoom, latitude, longitude)
+VALUES('Clackamas', 13, 45.424394, -122.561364);
+INSERT INTO Regions(region, zoom, latitude, longitude)
+VALUES('Gladstone', 13, 45.396964, -122.606327);
+INSERT INTO Regions(region, zoom, latitude, longitude)
+VALUES('Gresham', 12, 45.519107, -122.467157);
+INSERT INTO Regions(region, zoom, latitude, longitude)
+VALUES('Hillsboro', 13, 45.532176, -122.946609);
+INSERT INTO Regions(region, zoom, latitude, longitude)
+VALUES('Lake Oswego', 13, 45.412062, -122.708899);
+INSERT INTO Regions(region, zoom, latitude, longitude)
+VALUES('McMinnville', 13, 45.212834, -123.194461);
+INSERT INTO Regions(region, zoom, latitude, longitude)
+VALUES('Milwaukie', 13, 45.442150, -122.603444);
+INSERT INTO Regions(region, zoom, latitude, longitude)
+VALUES('Milwaukie - unspecified address', 13, 45.442150, -122.603444);
+INSERT INTO Regions(region, zoom, latitude, longitude)
+VALUES('Newberg', 14, 45.306023, -122.962595);
+INSERT INTO Regions(region, zoom, latitude, longitude)
+VALUES('Oregon City', 13, 45.339259, -122.594928);
+INSERT INTO Regions(region, zoom, latitude, longitude)
+VALUES('Portland - N', 12, 45.591044, -122.705321);
+INSERT INTO Regions(region, zoom, latitude, longitude)
+VALUES('Portland - NE', 12, 45.557181, -122.548615);
+INSERT INTO Regions(region, zoom, latitude, longitude)
+VALUES('Portland - NW', 13, 45.544348, -122.747077);
+INSERT INTO Regions(region, zoom, latitude, longitude)
+VALUES('Portland - SE', 13, 45.489079, -122.604001);
+INSERT INTO Regions(region, zoom, latitude, longitude)
+VALUES('Portland - SW', 12, 45.460597, -122.777978);
+INSERT INTO Regions(region, zoom, latitude, longitude)
+VALUES('Portland - unspecified address', 14, 45.523062, -122.676482);
+INSERT INTO Regions(region, zoom, latitude, longitude)
+VALUES('Salem', 12, 44.930796, -123.006361);
+INSERT INTO Regions(region, zoom, latitude, longitude)
+VALUES('Stevenson', 14, 45.704636, -121.886111);
+INSERT INTO Regions(region, zoom, latitude, longitude)
+VALUES('Tigard', 13, 45.412641, -122.758055);
+INSERT INTO Regions(region, zoom, latitude, longitude)
+VALUES('Tualatin', 13, 45.389742, -122.783843);
+INSERT INTO Regions(region, zoom, latitude, longitude)
+VALUES('Vancouver', 12, 45.661717, -122.589060);
+INSERT INTO Regions(region, zoom, latitude, longitude)
+VALUES('Washougal', 13, 45.579228, -122.354783);
+INSERT INTO Regions(region, zoom, latitude, longitude)
+VALUES('West Linn', 13, 45.365870, -122.639175);
+INSERT INTO Regions(region, zoom, latitude, longitude)
+VALUES('Wilsonville', 13, 45.317443, -122.765873);
+INSERT INTO Regions(region, zoom, latitude, longitude)
+VALUES('{all of the above}', 9, 45.421765, -122.485646);
+
 DROP TABLE Employers;
 CREATE TABLE Employers(id int(4), name varchar(100), latitude decimal(9,6), longitude decimal(9,6), address varchar(200), region varchar(40), url varchar(512), phone char(25), PRIMARY KEY(name, address));
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
