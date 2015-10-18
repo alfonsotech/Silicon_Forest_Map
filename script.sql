@@ -339,7 +339,7 @@ VALUES(138, 'Eleven Wireless', 45.522761, -122.682351, '315 SW 11th Ave, Third F
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(139, 'eLynx', 45.453807, -122.793125, '9205 SW Gemini Dr, Suite D, Beaverton, OR 97008', 'Beaverton', 'http://www.elynx.com/company/careers', null);
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
-VALUES(140, 'Emerge Interactive', 45.453807, -122.682974, '412 SW 12th Ave, Portland, OR 97205', 'Portland - SW', 'http://careers.emergeinteractive.com/', 'Phone: 503.922.3483');
+VALUES(140, 'Emerge Interactive', 45.522232, -122.682974, '412 SW 12th Ave, Portland, OR 97205', 'Portland - SW', 'http://careers.emergeinteractive.com/', 'Phone: 503.922.3483');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(141, 'Emma', 45.522769, -122.660163, '524 E. Burnside St, Suite 510, Portland, OR 97214', 'Portland - SE', 'http://careers.myemma.com/', null);
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
@@ -797,7 +797,7 @@ VALUES(367, 'SEH America (Shin-Etsu)', 45.650388, -122.553559, '4111 NE 112th Av
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(368, 'Selectron', 45.430686, -122.745155, '12323 SW 66th Ave, Portland, OR 97223', 'Portland - SW', 'http://selectron.website/careers', null);
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
-VALUES(369, 'CareOregon', 45.430686, -122.745155, '315 SW 5th Ave, #900, Portland, OR 97204', 'Portland - SW', 'http://www.careoregon.org/AboutUs/Careers.aspx', 'Phone: (503) 416-4100');
+VALUES(369, 'CareOregon', 45.521235, -122.676469, '315 SW 5th Ave, #900, Portland, OR 97204', 'Portland - SW', 'http://www.careoregon.org/AboutUs/Careers.aspx', 'Phone: (503) 416-4100');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(370, 'SellerActive / Bookbyte', 44.912747, -123.026041, '2800 Pringle Rd SE, Salem, OR 97302', 'Salem', 'http://www.selleractive.com/', 'Phone: (800) 545-7385');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
@@ -887,7 +887,7 @@ VALUES(412, 'Thetus Corporation', 45.521235, -122.677916, '326 SW Broadway, Port
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(413, 'ThinkShout, Inc.', 45.526513, -122.674833, '433 NW 4th Ave, Suite 100, Portland, OR 97209', 'Portland - NW', 'http://thinkshout.com/careers/', null);
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
-VALUES(414, 'Tivix, Inc.', 45.526513, -122.707243, '2929 SW Multnomah Blvd, Suite 306, Portland, OR 97219', 'Portland - SW', 'http://www.tivix.com/careers/', null);
+VALUES(414, 'Tivix, Inc.', 45.466533, -122.707243, '2929 SW Multnomah Blvd, Suite 306, Portland, OR 97219', 'Portland - SW', 'http://www.tivix.com/careers/', null);
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(415, 'Software Solutions Unlimited, Inc.', 45.450688, -122.791428, '9595 SW Gemini Dr, Beaverton, OR 97008-7149', 'Beaverton', 'http://ssui.com/join-the-ssi-team/', 'Phone: (971) 249-5400');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
