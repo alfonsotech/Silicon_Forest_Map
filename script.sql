@@ -137,7 +137,7 @@ VALUES(37, 'Audigy Group, LLC', 45.627875, -122.556839, '11201 NE 9th St, Vancou
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(38, 'Audinate', 45.533286, -122.689286, '1732 NW Quimby St, Suite 215, Portland, OR 97209', 'Portland - NW', 'https://www.audinate.com/about/careers', 'Phone: 503.224.2998');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
-VALUES(39, 'Autodesk, Inc.', 45.417145, -122.733143, '5400 SW Meadows Road, Lake Oswego, OR 97035', 'Lake Oswego', 'http://usa.autodesk.com/adsk/servlet/pc/index?id=1060484&siteID=123112', 'Phone: (503) 707-3600');
+VALUES(39, 'Autodesk, Inc.', 45.417145, -122.733143, '5400 SW Meadows Rd, Lake Oswego, OR 97035', 'Lake Oswego', 'http://usa.autodesk.com/adsk/servlet/pc/index?id=1060484&siteID=123112', 'Phone: (503) 707-3600');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(40, 'Automated Control Systems, Inc. (ACSI)', 45.692088, -122.550931, '9611 NE 117th Ave, #2830, Vancouver, WA 98662', 'Vancouver', 'http://www.automation-software.com/', 'Phone: (360) 737-6654');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
@@ -994,3 +994,7 @@ INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone
 VALUES(466, 'Washington County Consolidated Communications Agency (WCCCA)', 45.536665, -122.860294, '17911 NW Evergreen Pkwy, Beaverton, OR 97006', 'Beaverton', 'http://www.wccca.com/employment/current/', 'Phone: 503-690-4911');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(467, 'Quiktrak', 45.450376, -122.788898, '9700 SW Nimbus Ave, Beaverton, OR 97008', 'Beaverton', 'http://www.quiktrak.com/web/DetailPage.aspx?Page=About_Join', 'Phone: (800) 927-8725');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(468, 'Beaming White', 45.690006, -122.659347, '1205 NE 95th St, Vancouver, WA 98665', 'Vancouver', 'http://www.beamingwhite.com/', 'Phone: (360) 635-5600');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(469, 'Earth Class Mail', 45.452167, -122.791944, '9450 SW Gemini Dr, #101, Beaverton, OR 97008', 'Beaverton', 'https://www.earthclassmail.com/company/careers', 'Phone: (866) 625-6245');
