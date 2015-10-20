@@ -998,3 +998,5 @@ INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone
 VALUES(468, 'Beaming White', 45.690006, -122.659347, '1205 NE 95th St, Vancouver, WA 98665', 'Vancouver', 'http://www.beamingwhite.com/', 'Phone: (360) 635-5600');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(469, 'Earth Class Mail', 45.452167, -122.791944, '9450 SW Gemini Dr, #101, Beaverton, OR 97008', 'Beaverton', 'https://www.earthclassmail.com/company/careers', 'Phone: (866) 625-6245');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(470, 'Metro Presort, Inc.', 45.547260, -122.718555, '3506 NW 35th Ave, Portland, OR 97210', 'Portland - NW', 'https://www.metropresort.com/about-us/careers/', 'Phone: (503) 224-7230');
