@@ -1000,3 +1000,17 @@ INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone
 VALUES(469, 'Earth Class Mail', 45.452167, -122.791944, '9450 SW Gemini Dr, #101, Beaverton, OR 97008', 'Beaverton', 'https://www.earthclassmail.com/company/careers', 'Phone: (866) 625-6245');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(470, 'Metro Presort, Inc.', 45.547260, -122.718555, '3506 NW 35th Ave, Portland, OR 97210', 'Portland - NW', 'https://www.metropresort.com/about-us/careers/', 'Phone: (503) 224-7230');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(471, 'Citizen, Inc.', 45.537296, -122.691128, '2001 NW 19th Ave, Suite 105, Portland, OR 97209', 'Portland - NW', 'http://pluscitizen.com/contact/', 'Phone: (800) 928-6890');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(472, 'Vadio, Inc.', 45.518630, -122.682167, '919 SW Taylor St, Suite 300, Portland, OR 97205', 'Portland - SW', 'http://www.vadio.com/jobs', 'Phone: (503) 972-1162');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(473, 'Instrument', 45.526100, -122.655808, '419 NE 10th Ave, Portland, OR 97232', 'Portland - NE', 'http://www.instrument.com/careers/', 'Phone: (503) 928-3188');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(474, 'In2itive Search', 45.474034, -122.672172, '6915 SW Macadam Ave #102, Portland, OR 97219', 'Portland - SW', 'http://in2itivesearch.com/careers/', 'Phone: 503-206-4988');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(475, 'CTS Language Link', 45.628509, -122.671304, '911 Main St, Vancouver, WA 98660', 'Portland - SW', 'http://www.ctslanguagelink.com/about_current_openings.php', 'Phone:(360) 693-7100');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(476, 'SKIDATA Group', 45.535080, -122.663058, '240 NE Broadway St, Portland, OR 97227', 'Portland - NE', 'http://www.skidatausa.com/people-access.html', null);
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(477, 'Litmos Healthcare (a CallidusCloud company)', 45.622415, -122.537467, '13115 NE 4th St, Suite 115, Vancouver, WA 98684', 'Vancouver', 'http://www.litmos.com/healthcare/contact-us/', 'Phone: 866.447.2211');
