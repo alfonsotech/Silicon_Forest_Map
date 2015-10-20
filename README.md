@@ -15,5 +15,3 @@ An interactive Google map of all of the current (as of 2015) companies in the Po
   * default character set: utf8
  * Web server
  * PHP support
- 
-***This project is currently under early stages of development.***
