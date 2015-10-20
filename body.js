@@ -6,6 +6,7 @@
 var locations = [];
 var map;
 var markers = [];
+var titles = [];
 var myStyle = {
     strokeColor: "#000000",
     strokeOpacity: 1,
@@ -54,10 +55,6 @@ function getRegions() {
 
    // Now get the value from user and pass it to
    // server script.
-   /*var age = document.getElementById('age').value;
-   var wpm = document.getElementById('wpm').value;*/
-   //var queryString = "?region=" + value ;
-   
    ajaxRequest.open("GET", "ajax_get_regions.php", true);
    ajaxRequest.send(null);
 }
@@ -70,12 +67,11 @@ function getRegions() {
  *@return none
  */
 function getAllCompanies() {
-    var ajaxRequest;  //enable AJAX
+    var ajaxRequest;  
     try{
-        // Opera 8.0+, Firefox, Safari
+        
         ajaxRequest = new XMLHttpRequest();
     } catch (e){
-        // Internet Explorer Browsers
         try{
          ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP");
         } catch (e) {
@@ -95,6 +91,15 @@ function getAllCompanies() {
          var literals = ajaxRequest.responseText.substring(100, ajaxRequest.responseText.length-16);
          //convert the returned string to an array
          locations = eval("[" + literals + "]");
+          
+        var i;
+        for (i=0; i<locations.length; i++) {
+            (function (i_copy) {
+                getTitlesForMarkers(locations[i_copy][2], locations[i_copy][3], function(result) {
+                    titles.push(result);
+                }(i));        
+            });
+        }
       }
         
     }
@@ -114,12 +119,11 @@ function getCompaniesByRegion(region) {
     toggleMarkers(region);
     zoomToRegion(region);
     
-    var ajaxRequest;  //enable AJAX
+    var ajaxRequest;  
     try{
-        // Opera 8.0+, Firefox, Safari
+        
         ajaxRequest = new XMLHttpRequest();
     } catch (e){
-        // Internet Explorer Browsers
         try{
          ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP");
         } catch (e) {
@@ -150,22 +154,18 @@ function getCompaniesByRegion(region) {
  *@return map:map
  */
 function initMap() {
-  //Downtown Portland: 45.5200, -122.6819
-  //132nd & SE Clatsop: 45.461277, -122.527469
-  //145th & SE Grant: 45.506947, -122.514070
-  //se 172nd ave & se rock creek ct, clackamas: 45.421765, -122.485646
-  currentCenter = new google.maps.LatLng(45.421765, -122.485646);
+    //se 172nd ave & se rock creek ct, clackamas: 45.421765, -122.485646
+    currentCenter = new google.maps.LatLng(45.421765, -122.485646);
     
-
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: currentCenter,
-    zoom: zoomFactor
-  });
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: currentCenter,
+        zoom: zoomFactor
+    });
     
-  map.setMapTypeId(google.maps.MapTypeId.SATELLITE);
+    map.setMapTypeId(google.maps.MapTypeId.SATELLITE);
     
-  createMarkers();
-  clearCheckboxes();
+    createMarkers();
+    clearCheckboxes();
       
   return(map);
 }
@@ -200,10 +200,10 @@ function createMarkers() {
                     position: new google.maps.LatLng(locations[i][2], locations[i][3]),
                     map: map,
                     icon: 'marker.png',
-                    title: locations[i][1] + "\n" + locations[i][4] + "\n" + locations[i][7],
                     lat: locations[i][2],
                     lng: locations[i][3],
-                    regn: locations[i][5],
+                    title: locations[i][1] + "\n" + locations[i][4] + "\n" + locations[i][7],
+                    region: locations[i][5],
                     link: locations[i][6]
            });
         
@@ -214,8 +214,7 @@ function createMarkers() {
                 map.setCenter(new google.maps.LatLng(this.lat,this.lng));
                 isZoomed = 1;
             } else {
-                //map.setZoom(10);
-                zoomToRegion(this.regn);
+                zoomToRegion(this.region);
                 isZoomed = 0;
             }
         });
@@ -260,27 +259,22 @@ function toggleMarkers(value) {
         markers[i].setVisible(false);
         if (locations[i][5] == value) {
             markers[i].setVisible(true);
-            //showResultsDiv();
         }
         else {
             markers[i].setVisible(false);
-            //clearResultsDiv();
         }
     } 
     
-    var ajaxRequest;  //enable AJAX
+    var ajaxRequest;
     try{
-        // Opera 8.0+, Firefox, Safari
         ajaxRequest = new XMLHttpRequest();
     } catch (e){
-        // Internet Explorer Browsers
         try{
          ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP");
         } catch (e) {
             try{
                 ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP");
             } catch (e){
-                // Something went wrong
                 alert("AJAX request error");
                 return false;
               }
@@ -304,11 +298,6 @@ function toggleMarkers(value) {
  *updates the marker visibilities
  *@param none
  *@return none
- */
-/**
- * Turns off the visibility of the Results div
- * @param none
- * @return none
  */
 function toggleAllMarkers() {
     zoomToRegion("{all of the above}");
@@ -338,19 +327,16 @@ function toggleAllMarkers() {
         }
     }
     
-    var ajaxRequest;  //enable AJAX
+    var ajaxRequest;  
     try{
-        // Opera 8.0+, Firefox, Safari
         ajaxRequest = new XMLHttpRequest();
     } catch (e){
-        // Internet Explorer Browsers
         try{
          ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP");
         } catch (e) {
             try{
                 ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP");
-            } catch (e){
-                // Something went wrong
+            } catch (e) {
                 alert("AJAX request error");
                 return false;
               }
@@ -364,7 +350,6 @@ function toggleAllMarkers() {
       }
    }
 
-   // Now set up the server script.
    ajaxRequest.open("GET", "ajax_get_all_company_names.php", true);
    ajaxRequest.send(null);
 }
@@ -421,5 +406,39 @@ function zoomToRegion(region) {
 
    var queryString = "?region=" + region;
    ajaxRequest.open("GET", "ajax_get_zoom_parameters.php"+queryString, true);
+   ajaxRequest.send(null);
+}
+
+/**
+ * Gets the tooltip title for each map markers
+ * @param latitude:decimal, longitude:decimal
+ * @return result:string
+ */
+function getTitlesForMarkers(latitude, longitude, callback) {
+    var ajaxRequest;
+    try{
+        ajaxRequest = new XMLHttpRequest();
+    } catch (e){
+        try{
+         ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP");
+        } catch (e) {
+            try{
+                ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP");
+            } catch (e){
+                alert("AJAX request error");
+                return false;
+              }
+          }
+       }
+    
+   ajaxRequest.onreadystatechange = function(){
+      if(ajaxRequest.readyState == 4){
+          var result = ajaxRequest.responseText.substring(96, ajaxRequest.responseText.length-16);
+          callback(result);
+      }
+   }
+
+   var queryString = "?latitude=" + latitude + "&longitude=" + longitude;
+   ajaxRequest.open("GET", "ajax_get_title_for_marker.php"+queryString, true);
    ajaxRequest.send(null);
 }
