@@ -257,7 +257,7 @@ function toggleMarkers(value) {
     //update the marker visibilities
     for (i=0; i<locations.length; i++) {
         markers[i].setVisible(false);
-        if (locations[i][5] == value) {
+        if (locations[i][5] == value && currentselection.checked == true) {
             markers[i].setVisible(true);
         }
         else {
