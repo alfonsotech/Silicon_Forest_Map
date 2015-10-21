@@ -6,7 +6,13 @@ Copyright 2015 Todd Brochu
 <html>
 <body>
     <?php
-        include 'credentials.php';
+        $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+        $dbhost = $url["host"];
+        $dbuser = $url["user"];
+        $dbpass = $url["pass"];
+        $dbname = substr($url["path"], 1);
+        /* include 'credentials.php'; */
 
         mysql_connect($dbhost, $dbuser, $dbpass);
         mysql_select_db($dbname) or die(mysql_error());
