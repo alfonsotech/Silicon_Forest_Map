@@ -1014,3 +1014,5 @@ INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone
 VALUES(476, 'SKIDATA Group', 45.535080, -122.663058, '240 NE Broadway St, Portland, OR 97227', 'Portland - NE', 'http://www.skidatausa.com/people-access.html', null);
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(477, 'Litmos Healthcare (a CallidusCloud company)', 45.622415, -122.537467, '13115 NE 4th St, Suite 115, Vancouver, WA 98684', 'Vancouver', 'http://www.litmos.com/healthcare/contact-us/', 'Phone: 866.447.2211');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(478, 'Underwriters Laboratories, LLC (UL)', 45.616084, -122.441281, '2600 NW Lake Rd, Camas, WA 98607', 'Camas', 'http://ul.com/aboutul/careers/', 'Phone: (360) 817-5500');
