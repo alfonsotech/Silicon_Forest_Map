@@ -37,12 +37,12 @@ Copyright 2015 Todd Brochu
           $display_string .= "<input type=\"checkbox\" name=\"checkbox\" value=\"$row[region]\"      onclick=\"getCompaniesByRegion(value)\"> $row[region] (";
             
           //get the number of companies for each region
-          $query = "SELECT region, COUNT(*) FROM Employers WHERE region = '$row[region]'";
+          /*$query = "SELECT region, COUNT(*) FROM Employers WHERE region = '$row[region]'";
           $qty_result = mysql_query($query) or die(mysql_error());
           $qty = mysql_fetch_row($qty_result);
           $display_string .= $qty[1];
             
-          $display_string .= ")<br>";
+          $display_string .= ")<br>";*/
         }
         $display_string .= "<input type=\"checkbox\" id=\"checkall\" onclick=\"toggleAllMarkers()\"> {all of the above} (";
             } else {
