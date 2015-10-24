@@ -1,6 +1,6 @@
 -- USE mydb;
 DROP TABLE Regions;
-CREATE TABLE Regions(region varchar(40), zoom int(2), latitude decimal(9,6), longitude decimal(9,6), PRIMARY KEY(region));
+CREATE TABLE Regions(region varchar(40), zoom int(2), latitude decimal(9,6), longitude decimal(9,6));
 INSERT INTO Regions(region, zoom, latitude, longitude)
 VALUES('Beaverton', 12, 45.499926, -122.835172);
 INSERT INTO Regions(region, zoom, latitude, longitude)
