@@ -1016,3 +1016,9 @@ INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone
 VALUES(477, 'Litmos Healthcare (a CallidusCloud company)', 45.622415, -122.537467, '13115 NE 4th St, Suite 115, Vancouver, WA 98684', 'Vancouver', 'http://www.litmos.com/healthcare/contact-us/', 'Phone: 866.447.2211');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(478, 'Underwriters Laboratories, LLC (UL)', 45.616084, -122.441281, '2600 NW Lake Rd, Camas, WA 98607', 'Camas', 'http://ul.com/aboutul/careers/', 'Phone: (360) 817-5500');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(479, 'Performance Logic, Inc.', 45.520353, -122.656169, '901 SE Oak St, Suite 205, Portland, OR 97214', 'Portland - SE', 'http://www.performancelogic.com/about/contact.html', 'Phone: 503-736-3116');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(480, 'AKQA', 45.523685, -122.682788, '1120 NW Couch St, Suite 650, Portland, OR 97209', 'Portland - NW', 'http://www.akqa.com/careers/', 'Phone: 503-820-4300');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(481, 'Ruby Receptionists', 45.530272, -122.685221, '1331 NW Lovejoy St, #875, Portland, OR 97209', 'Portland - NW', 'http://www.callruby.com/careers.html', 'Phone: 866-611-7829');
