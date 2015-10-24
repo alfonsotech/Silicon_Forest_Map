@@ -143,7 +143,7 @@ VALUES(40, 'Automated Control Systems, Inc. (ACSI)', 45.692088, -122.550931, '96
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(41, 'Avatron Software', 45.524036, -122.679966, '108 NW 9th Ave, Portland, OR 97204', 'Portland - NW', 'http://www.avatron.com/about/jobs/', null);
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
-VALUES(42, 'A•VIBE Web Development', 45.521080, -122.686629, '1410 SW Morrison St, #800, Portland, OR 97205', 'Portland - SW', 'http://www.avibeweb.com/', 'Phone: 503-296-8499');
+VALUES(42, 'A-VIBE Web Development', 45.521080, -122.686629, '1410 SW Morrison St, #800, Portland, OR 97205', 'Portland - SW', 'http://www.avibeweb.com/', 'Phone: 503-296-8499');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(43, 'Avinode', 45.519964, -122.677919, '520 SW 6th Ave, Suite 914, Portland, OR 97204', 'Portland - SW', 'http://www.avinode.com/the-node/avinode-jobs/', 'Phone: 503-282-5518');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
