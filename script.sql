@@ -1,6 +1,7 @@
 -- USE mydb;
+DROP TABLE Employers;
 DROP TABLE Regions;
-CREATE TABLE Regions(region varchar(40), zoom int(2), latitude decimal(9,6), longitude decimal(9,6));
+CREATE TABLE Regions(region varchar(40), zoom int(2), latitude decimal(9,6), longitude decimal(9,6), PRIMARY KEY(region));
 INSERT INTO Regions(region, zoom, latitude, longitude)
 VALUES('Beaverton', 12, 45.499926, -122.835172);
 INSERT INTO Regions(region, zoom, latitude, longitude)
@@ -58,8 +59,8 @@ VALUES('Wilsonville', 13, 45.317443, -122.765873);
 INSERT INTO Regions(region, zoom, latitude, longitude)
 VALUES('{all of the above}', 9, 45.421765, -122.485646);
 
-DROP TABLE Employers;
-CREATE TABLE Employers(id int(4), name varchar(100), latitude decimal(9,6), longitude decimal(9,6), address varchar(200), region varchar(40), url varchar(512), phone char(25), PRIMARY KEY(name, address), FOREIGN KEY (region) REFERENCES Regions(region));
+-- DROP TABLE Employers;
+CREATE TABLE Employers(id int(4), name varchar(100), latitude decimal(9,6), longitude decimal(9,6), address varchar(200), region varchar(40), url varchar(512), phone char(25), PRIMARY KEY(name, address), FOREIGN KEY(region) REFERENCES Regions(region));
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(1, '10up', 45.52653108, -122.6768367, '618 NW Glisan St, Suite 400, Portland, OR, 97209', 'Portland - NW', 'http://10up.com/careers/', null);
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
