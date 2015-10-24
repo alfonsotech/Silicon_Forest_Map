@@ -1,4 +1,4 @@
-USE mydb;
+-- USE mydb;
 DROP TABLE Regions;
 CREATE TABLE Regions(region varchar(40), zoom int(2), latitude decimal(9,6), longitude decimal(9,6), PRIMARY KEY(region));
 INSERT INTO Regions(region, zoom, latitude, longitude)

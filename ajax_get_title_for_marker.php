@@ -8,31 +8,39 @@ Copyright 2015 Todd Brochu
     <?php
         $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
-        $dbhost = $url["host"];
-        $dbuser = $url["user"];
-        $dbpass = $url["pass"];
+        $server = $url["host"];
+        $username = $url["user"];
+        $password = $url["pass"];
         $dbname = substr($url["path"], 1);
         /* include 'credentials.php'; */
+        
+        $conn = new mysqli($server, $username, $password, $dbname);
 
-        mysql_connect($dbhost, $dbuser, $dbpass);
-        mysql_select_db($dbname) or die(mysql_error());
+        //$latitude = $_GET['latitude'];
+        //$longitude = $_GET['longitude'];
+        //$latitude = mysql_real_escape_string($latitude);
+        $latitude = mysqli_real_escape_string($conn, $_GET['latitude']);
+        //$longitude = mysql_real_escape_string($longitude);
+        $longitude = mysqli_real_escape_string($conn, $_GET['longitude']);
 
-        $latitude = $_GET['latitude'];
-        $longitude = $_GET['longitude'];
-        $latitude = mysql_real_escape_string($latitude);
-        $longitude = mysql_real_escape_string($longitude);
-
-        $query = "SELECT name, address, phone FROM Employers WHERE latitude = '$latitude' AND longitude = '$longitude' ORDER BY name";
-        $qry_result = mysql_query($query) or die(mysql_error());
+        $sql = "SELECT name, address, phone FROM Employers WHERE latitude = '$latitude' AND longitude = '$longitude' ORDER BY name";
+        
+        if(!$result = $conn->query($sql)){
+            die('There was an error running the query [' . $conn->error . ']');
+        }
 
         $display_string = "";
 
-        while($row = mysql_fetch_array($qry_result)){
-          $display_string .= "$row[name]\n$row[address]\n$row[phone]\n\n";
+        //while($row = mysql_fetch_array($qry_result)){
+        while($row = $result->fetch_assoc()) {
+            foreach($result as $row) {
+                $display_string .= "$row[name]\n$row[address]\n$row[phone]\n\n";
+            }
         }
-
         echo $display_string;
-        mysql_close();
+        
+        $result->free();
+        $conn->close();
     ?>
 </body>
 </html>

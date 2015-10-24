@@ -15,53 +15,55 @@ Copyright 2015 Todd Brochu
         /* include 'credentials.php'; */
         
         //Connect to MySQL server
-        //mysql_connect($server, $username, $password);
         $conn = new mysqli($server, $username, $password, $dbname);
-
-        //Select database
-        //mysql_select_db($dbname) or die(mysql_error());
 
         //build query
         $sql = "SELECT DISTINCT region FROM Employers ORDER BY region";
 
         //Execute query
-        //$qry_result = mysql_query($query) or die(mysql_error());
+        if(!$result = $conn->query($sql)){
+            die('There was an error running the query [' . $conn->error . ']');
+        }
 
-        if ($result = $conn->query($sql)) {
-        //Build Result String
         $display_string = "<ul><form action=\"\">";
+    
+        while($row = $result->fetch_assoc()) {
+            // Insert a new row in the table for each region returned
+            foreach($result as $row) {
+                $display_string .= "<input type=\"checkbox\" name=\"checkbox\" value=\"$row[region]\"      onclick=\"getCompaniesByRegion(value)\"> $row[region] (";
 
-        // Insert a new row in the table for each person returned
-        //while($row = mysql_fetch_array($qry_result)){
-        foreach($result as $row) {
-          $display_string .= "<input type=\"checkbox\" name=\"checkbox\" value=\"$row[region]\"      onclick=\"getCompaniesByRegion(value)\"> $row[region] (";
-            
-          //get the number of companies for each region
-          $inner_sql = "SELECT region, COUNT(*) FROM Employers WHERE region = '$row[region]'";
-            
-          //$qty_result = mysql_query($query) or die(mysql_error());
-          if ($qty_result = $conn->query($inner_sql)) {
-              $qty = mysql_fetch_row($qty_result);
-              $display_string .= $qty[1];
-              $display_string .= ")<br>";
-          }
-          
+                //get the number of companies for each region
+                $inner_sql = "SELECT COUNT(*) FROM Employers WHERE region = '$row[region]'";
+
+                if ($qty_result = $conn->query($inner_sql)) {
+                    while ($qty = $qty_result->fetch_row()) {
+                        $display_string .= $qty[0];
+                        $display_string .= ")<br>";
+                    }
+                }
+             }
+        } 
+
+        //get the number of companies for each region
+        $outer_sql = "SELECT COUNT(*) FROM Employers";
+
+        if(!$outer_result = $conn->query($outer_sql)){
+            die('There was an error running the query [' . $conn->error . ']');
         }
+
         $display_string .= "<input type=\"checkbox\" id=\"checkall\" onclick=\"toggleAllMarkers()\"> {all of the above} (";
-            } else {
-            throw new Exception($conn->error);
-        }
 
-          //get the number of companies for each region
-          /*$query = "SELECT COUNT(*) FROM Employers";
-          $qty_result = mysql_query($query) or die(mysql_error());
-          $qty = mysql_fetch_row($qty_result);
-          $display_string .= $qty[0];*/
+        if ($qty_result = $conn->query($outer_sql)) {
+           while ($qty = $qty_result->fetch_row()) {
+              $display_string .= $qty[0];
+           }
+        }
 
         $display_string .= ")</form></ul>";
         echo $display_string;
+
+        $result->free();
         $conn->close();
-        //mysql_close();
     ?>
 </body>
 </html>

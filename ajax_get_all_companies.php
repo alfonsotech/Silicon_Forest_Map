@@ -14,26 +14,23 @@ Copyright 2015 Todd Brochu
         $dbname = substr($url["path"], 1);
         /* include 'credentials.php'; */
         
-        //mysql_connect($dbhost, $dbuser, $dbpass);
         $conn = new mysqli($server, $username, $password, $dbname);
 
-        //mysql_select_db($dbname) or die(mysql_error());
-
         $sql = "SELECT * FROM Employers ORDER BY name";
-        //$qry_result = mysql_query($query) or die(mysql_error());
-
-        if ($result = $conn->query($sql)) {
+        
+        if(!$result = $conn->query($sql)){
+            die('There was an error running the query [' . $conn->error . ']');
+        }
+        
         $display_string = "[]";
-
-        //while($row = mysql_fetch_array($qry_result)){
-        foreach($result as $row) {
-            $display_string .= " ,[\"$row[id]\", \"$row[name]\", \"$row[latitude]\", \"$row[longitude]\", \"$row[address]\", \"$row[region]\", \"$row[url]\", \"$row[phone]\"]";
+    
+        while($row = $result->fetch_assoc()) {  
+                $display_string .= " ,[\"$row[id]\", \"$row[name]\", \"$row[latitude]\", \"$row[longitude]\", \"$row[address]\", \"$row[region]\", \"$row[url]\", \"$row[phone]\"]";
         }
-         
         echo $display_string;
-        }
+        
+        $result->free();
         $conn->close();
-        //mysql_close();
     ?>
 </body>
 </html>

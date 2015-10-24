@@ -3,7 +3,7 @@
  * Copyright 2015 Todd Brochu
  */
 /*jslint browser: true, devel: true, plusplus: true*/
-/*global google */
+/*global google*/
 
 var locations = [];
 var map;
@@ -28,6 +28,7 @@ function zoomToRegion(region) {
     "use strict";
     var ajaxRequest,
         queryString = "?region=" + region;
+    
     try {
         ajaxRequest = new XMLHttpRequest();
     } catch (e1) {
@@ -133,6 +134,7 @@ function createMarkers() {
         markers.push(marker);
         markers[i].setVisible(false);
     }
+    getRegions();
 }
 
 /**
@@ -197,6 +199,7 @@ function toggleMarkers(value) {
         if (ajaxRequest.readyState === 4) {
             var ajaxDisplay = document.getElementById('results');
             ajaxDisplay.innerHTML = ajaxRequest.responseText;
+            zoomToRegion(value);
         }
     };
  
@@ -213,6 +216,7 @@ function getTitlesForMarkers(latitude, longitude, callback) {
     "use strict";
     var ajaxRequest,
         queryString = "?latitude=" + latitude + "&longitude=" + longitude;
+    
     try {
         ajaxRequest = new XMLHttpRequest();
     } catch (e1) {
@@ -248,6 +252,7 @@ function getTitlesForMarkers(latitude, longitude, callback) {
 function getRegions() {
     "use strict";
     var ajaxRequest;  //enable AJAX
+    
     try {
         // Opera 8.0+, Firefox, Safari
         ajaxRequest = new XMLHttpRequest();
@@ -292,8 +297,8 @@ function getRegions() {
 function getAllCompanies() {
     "use strict";
     var ajaxRequest;
+    
     try {
-        
         ajaxRequest = new XMLHttpRequest();
     } catch (e1) {
         try {
@@ -313,18 +318,18 @@ function getAllCompanies() {
                 //chop off the html encoding from the responseText, leaving just the array value literals
                 literals = ajaxRequest.responseText.substring(100, ajaxRequest.responseText.length - 16),
                 i;
-            ajaxDisplay.innerHTML = ajaxRequest.responseText;
             
             //convert the returned string to an array
             locations = eval("[" + literals + "]");
-          
-            for (i = 0; i < locations.length; i++) {
+            //future feature to display multiple locations in one title
+            /*for (i = 0; i < locations.length; i++) {
                 (function (i_copy) {
                     getTitlesForMarkers(locations[i_copy][2], locations[i_copy][3], function (result) {
                         titles.push(result);
                     }(i));
                 });
-            }
+            }*/
+            createMarkers();
         }
         
     };
@@ -342,14 +347,10 @@ function getAllCompanies() {
  */
 function getCompaniesByRegion(region) {
     "use strict";
-    toggleMarkers(region);
-    zoomToRegion(region);
-    
     var ajaxRequest,
         queryString = "?region=" + region;
     
     try {
-        
         ajaxRequest = new XMLHttpRequest();
     } catch (e1) {
         try {
@@ -367,6 +368,7 @@ function getCompaniesByRegion(region) {
         if (ajaxRequest.readyState === 4) {
             var ajaxDisplay = document.getElementById('results');
             ajaxDisplay.innerHTML = ajaxRequest.responseText;
+            toggleMarkers(region);
         }
     };
     
@@ -379,12 +381,13 @@ function getCompaniesByRegion(region) {
  *calls functions which render the markers
  *and clear the region checkboxes
  *@param none
- *@return map:map
+ *@return none
  */
 function initMap() {
     "use strict";
     //se 172nd ave & se rock creek ct, clackamas: 45.421765, -122.485646
     currentCenter = new google.maps.LatLng(45.421765, -122.485646);
+    var i;
     
     map = new google.maps.Map(document.getElementById('map'), {
         center: currentCenter,
@@ -393,10 +396,7 @@ function initMap() {
     
     map.setMapTypeId(google.maps.MapTypeId.SATELLITE);
     
-    createMarkers();
-    clearCheckboxes();
-      
-    return (map);
+    getAllCompanies();
 }
 
 /**
