@@ -16,7 +16,7 @@ Copyright 2015 Todd Brochu
         
         $conn = new mysqli($server, $username, $password, $dbname);
 
-        $sql = "SELECT name FROM Employers ORDER BY name";
+        $sql = "SELECT url, name FROM Employers ORDER BY name";
 
         if(!$result = $conn->query($sql)){
             die('There was an error running the query [' . $conn->error . ']');
