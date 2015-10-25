@@ -318,7 +318,7 @@ function getAllCompanies() {
                 //chop off the html encoding from the responseText, leaving just the array value literals
                 literals = ajaxRequest.responseText.substring(100, ajaxRequest.responseText.length - 16),
                 i;
-            
+
             //convert the returned string to an array
             locations = eval("[" + literals + "]");
             //future feature to display multiple locations in one title
