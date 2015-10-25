@@ -111,7 +111,7 @@ function createMarkers() {
         var marker = new google.maps.Marker({
                 position: new google.maps.LatLng(locations[i][2], locations[i][3]),
                 map: map,
-                icon: 'marker.png',
+                icon: 'assets/marker.png',
                 lat: locations[i][2],
                 lng: locations[i][3],
                 title: locations[i][1] + "\n" + locations[i][4] + "\n" + locations[i][7],
