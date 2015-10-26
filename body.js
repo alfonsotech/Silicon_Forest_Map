@@ -316,7 +316,7 @@ function getAllCompanies() {
         if (ajaxRequest.readyState === 4) {
             var ajaxDisplay = document.getElementById('map'),
                 //chop off the html encoding from the responseText, leaving just the array value literals
-                literals = ajaxRequest.responseText.substring(100, ajaxRequest.responseText.length - 16),
+                literals = ajaxRequest.responseText.substring(93, ajaxRequest.responseText.length - 16),
                 i;
 
             //convert the returned string to an array
