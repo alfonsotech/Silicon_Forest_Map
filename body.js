@@ -46,7 +46,7 @@ function zoomToRegion(region) {
     
     ajaxRequest.onreadystatechange = function () {
         if (ajaxRequest.readyState === 4) {
-            var result = ajaxRequest.responseText.substring(96, ajaxRequest.responseText.length - 16),
+            var result = ajaxRequest.responseText.substring(89, ajaxRequest.responseText.length - 16),
                 array = result.split(" ");
             zoomFactor = array[0];
             console.log("result" + result);
