@@ -49,8 +49,6 @@ function zoomToRegion(region) {
             var result = ajaxRequest.responseText.substring(89, ajaxRequest.responseText.length - 15),
                 array = result.split(" ");
             zoomFactor = parseInt(array[0]);
-            console.log("zoomFactor: " + zoomFactor);
-            console.log("array[1]: " + array[1] + ", array[2]: " + array[2]);
             map.setZoom(zoomFactor);
             map.setCenter(new google.maps.LatLng(array[1], array[2]));
         }
@@ -100,11 +98,13 @@ function showResultsDiv() {
 
 /**
  *creates a marker for each location
+ *calls the getRegions method
  *@param none
  *@return none
  */
 function createMarkers() {
     "use strict";
+    //se 172nd ave & se rock creek ct, clackamas: 45.421765, -122.485646
     currentCenter = new google.maps.LatLng(45.421765, -122.485646);
     var isZoomed = 0,
         i;
@@ -142,6 +142,7 @@ function createMarkers() {
 /**
  *toggles the visibility of 
  *the markers and checkboxes
+ *calls the zoomToRegion method
  *@param value:string
  *@return none
  */
@@ -211,8 +212,8 @@ function toggleMarkers(value) {
 
 /**
  * Gets the tooltip title for each map markers
- * @param latitude:decimal, longitude:decimal
- * @return result:string
+ * @param latitude:decimal, longitude:decimal, callback
+ * @return none
  */
 function getTitlesForMarkers(latitude, longitude, callback) {
     "use strict";
@@ -293,6 +294,7 @@ function getRegions() {
  *gets the complete database dump
  *and formats the resulting string
  *as an array of companies
+ *Calls the createMarkers method
  *@param none
  *@return none
  */
@@ -344,6 +346,7 @@ function getAllCompanies() {
  *calls the toggleMarkers and zoomToRegion methods
  *displays in the Results div a list of companies
  *within the specified region
+ *Calls the toggleMarkers method
  *@param region:string
  *@return none
  */
@@ -379,9 +382,8 @@ function getCompaniesByRegion(region) {
 }
 
 /**
- *displays the Google map centered on the given coordinates
- *calls functions which render the markers
- *and clear the region checkboxes
+ *Creates a Google map centered on the given coordinates
+ *calls the getAllCompanies method
  *@param none
  *@return none
  */
