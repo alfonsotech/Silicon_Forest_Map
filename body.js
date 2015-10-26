@@ -49,7 +49,7 @@ function zoomToRegion(region) {
             var result = ajaxRequest.responseText.substring(96, ajaxRequest.responseText.length - 16),
                 array = result.split(" ");
             zoomFactor = array[0];
-            console.log("ajaxRequest.responseText" + ajaxRequest.responseText);
+            console.log("result" + result);
             console.log("zoomFactor: " + zoomFactor);
             map.setZoom(zoomFactor);
             map.setCenter(new google.maps.LatLng(array[1], array[2]));
