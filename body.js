@@ -314,15 +314,12 @@ function getAllCompanies() {
     }
     ajaxRequest.onreadystatechange = function () {
         if (ajaxRequest.readyState === 4) {
-            var ajaxDisplay = document.getElementById('map'),
-                //chop off the html encoding from the responseText, leaving just the array value literals
-                literals = ajaxRequest.responseText.substring(93, ajaxRequest.responseText.length - 15),
+            //chop off the html encoding from the responseText, leaving just the array value literals
+            var literals = ajaxRequest.responseText.substring(93, ajaxRequest.responseText.length - 15),
                 i;
 
             //convert the returned string to an array
-            console.log("323: " + literals);
             locations = JSON.parse("[" + literals + "]");
-            console.log("325: " + locations[0]);
             
             //future feature to display multiple locations in one title
             /*for (i = 0; i < locations.length; i++) {
