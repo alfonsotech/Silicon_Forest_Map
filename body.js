@@ -48,7 +48,7 @@ function zoomToRegion(region) {
         if (ajaxRequest.readyState === 4) {
             var result = ajaxRequest.responseText.substring(96, ajaxRequest.responseText.length - 16),
                 array = result.split(" ");
-            zoomFactor = +array[0];
+            zoomFactor = array[0];
             console.log("ajaxRequest.responseText" + ajaxRequest.responseText);
             console.log("zoomFactor: " + zoomFactor);
             map.setZoom(zoomFactor);
