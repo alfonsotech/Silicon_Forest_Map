@@ -320,7 +320,8 @@ function getAllCompanies() {
                 i;
 
             //convert the returned string to an array
-            locations = eval("[" + literals + "]");
+            locations = JSON.parse("[" + literals + "]");
+            
             //future feature to display multiple locations in one title
             /*for (i = 0; i < locations.length; i++) {
                 (function (i_copy) {
