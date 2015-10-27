@@ -30,7 +30,7 @@ Copyright 2015 Todd Brochu
         while($row = $result->fetch_assoc()) {
             // Insert a new row in the table for each region returned
             foreach($result as $row) {
-                $display_string .= "<input type=\"checkbox\" name=\"checkbox\" value=\"$row[region]\"      onclick=\"getCompaniesByRegion(value)\"> $row[region] (";
+                $display_string .= "<input type=\"checkbox\" name=\"checkbox\" value=\"$row[region]\"onclick=\"getCompaniesByRegion(value)\"> $row[region] (";
 
                 //get the number of companies for each region
                 $inner_sql = "SELECT COUNT(*) FROM Employers WHERE region = '$row[region]'";
