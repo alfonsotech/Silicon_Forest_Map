@@ -468,3 +468,25 @@ function toggleAllMarkers() {
     ajaxRequest.open("GET", "ajax_get_all_company_names.php", true);
     ajaxRequest.send(null);
 }
+
+/**
+ *enables the visibility of a window
+ *@param id:string
+ *@return none
+ */
+function openWindow() {
+    "use strict";
+    var window = document.getElementById('info-window');
+    window.style.display = 'block';
+}
+
+/**
+ *disables the visibility of a window
+ *@param id:string
+ *@return none
+ */
+function closeWindow() {
+    "use strict";
+    var window = document.getElementById('info-window');
+    window.style.display = 'none';
+}

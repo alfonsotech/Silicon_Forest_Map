@@ -16,8 +16,7 @@ Copyright 2015 Todd Brochu
       <div class="left-panels">
         <div class="navbar">
             <strong>Silicon Forest Map 2015</strong>
-            <button type="button" id="info"
-                    onclick="alert('Silicon Forest Map\ncopyright 2015 Todd Brochu\n\nAn interactive map of all of the current companies in the Portland area\n that employ software developers, software engineers and / or web developers\n\nStart by clicking on a region from the menu on the left side.\nThe map will zoom to the selected region.\nCompanies within the selected region will be displayed on the map as a marker\nas well as in the Companies list at the bottom left.\nEach item in the Companies list contains a link to the website of that company.\n\nHovering over a marker on the map will display basic information for that company.\nClicking on a marker will zoom directly to the corresponding address.\nTo zoom back out to the previous view, simply click on the marker again.')">
+            <button type="button" id="open-info-window-button" onclick="openWindow()">
                 <strong>&#63;</strong>
             </button>  
         </div>
@@ -37,6 +36,19 @@ Copyright 2015 Todd Brochu
         <div id="results"></div>
       </div>
       <div id="map"></div>
+      <div id="info-window">
+        <strong>Silicon Forest Map</strong><br><br>
+        Copyright 2015 Todd Brochu<br><br>
+        An interactive map of all of the current companies in the Portland area that employ software developers, software engineers and / or web developers<br><br>
+        Start by clicking on a region from the menu on the left side.<br>
+        The map will zoom to the selected region.<br>
+        Companies within the selected region will be displayed on the map as a marker as well as in the Companies list at the bottom left.<br>
+        Each item in the Companies list contains a link to the website of that company.<br><br>
+        Hovering over a marker on the map will display basic information for that company.<br>
+        Clicking on a marker will zoom directly to the corresponding address.<br>
+        To zoom back out to the previous view, simply click on the marker again.<br><br>
+        <button type="button" id="close-info-window-button" onclick="closeWindow()">OK</button>
+      </div>
     <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk_yXEl8gEgsEtRv1-XgwKZSI2Khim3Sk&callback=initMap">
     </script>      
