@@ -3,6 +3,7 @@
  * Copyright 2015 Todd Brochu
  */
 html, body {
+    position: absolute;
     height: 100%;
     width: 100%;
     margin: 0;
@@ -43,9 +44,8 @@ html, body {
     display: none;
     position: absolute;
     vertical-align: middle;
-    top: 40%;
-    left: 65%;
-    transform: translate(-50%, -35%);
+    top: 18%;
+    left: 40%;
     width: 50%;
     height: 60%;
     background-color: #e6e7e8;
@@ -58,9 +58,9 @@ html, body {
 }
 
 #close-info-window-button {
-    position: relative;
-    bottom: 3%;
-    left: 91%;
+    position: absolute;
+    bottom: 5%;
+    left: 90%;
     width: 50px;
     height: 40px;
     font-size: 16px;
