@@ -107,7 +107,8 @@ function createMarkers() {
     "use strict";
     //se 172nd ave & se rock creek ct, clackamas: 45.421765, -122.485646
     currentCenter = new google.maps.LatLng(45.421765, -122.485646);
-    var i;
+    var i,
+        markerinfo = new google.maps.InfoWindow();
     
     for (i = 0; i < locations.length; i++) {
         var marker = new google.maps.Marker({
