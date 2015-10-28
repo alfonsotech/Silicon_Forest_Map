@@ -18,6 +18,7 @@ var myStyle = {
 };
 var zoomFactor = 9;
 var currentCenter;
+var isZoomed = 0;
 
 /**
  * Zooms to the selected region
@@ -106,30 +107,33 @@ function createMarkers() {
     "use strict";
     //se 172nd ave & se rock creek ct, clackamas: 45.421765, -122.485646
     currentCenter = new google.maps.LatLng(45.421765, -122.485646);
-    var isZoomed = 0,
-        i;
+    var i;
     
     for (i = 0; i < locations.length; i++) {
         var marker = new google.maps.Marker({
                 position: new google.maps.LatLng(locations[i][2], locations[i][3]),
                 map: map,
                 icon: 'assets/marker.png',
+                name: locations[i][1],
                 lat: locations[i][2],
                 lng: locations[i][3],
-                title: locations[i][1] + "\n" + locations[i][4] + "\n" + locations[i][7],
+                //title: locations[i][1] + "\n" + locations[i][4] + "\n" + locations[i][7],
+                address: locations[i][4],
                 region: locations[i][5],
-                link: locations[i][6]
+                link: locations[i][6],
+                phone: locations[i][7]
             });
         
-        marker.addListener('click', function () {
+        marker.addListener('mouseover', function () {
             if (isZoomed === 0) {
+                markerinfo.open(map, marker);
+                markerinfo.setContent("<div class=\"locationInfo\"><a href = " + this.link + ">" + this.name + "</a><br><br>" + this.address + "<br>" + this.phone + "<br><br><a class=\"zoomButton\" onclick=\"zoomIn(" + this.lat + ", " + this.lng + ")\">Zoom In</a></div>");
+                markerinfo.setPosition(new google.maps.LatLng(this.lat, this.lng));
                 zoomFactor = 18;
-                map.setZoom(zoomFactor);
-                map.setCenter(new google.maps.LatLng(this.lat, this.lng));
-                isZoomed = 1;
             } else {
-                zoomToRegion(this.region);
-                isZoomed = 0;
+                markerinfo.open(map, marker);
+                markerinfo.setContent("<div class=\"locationInfo\"><a href = " + this.link + ">" + this.name + "</a><br><br>" + this.address + "<br>" + this.phone + "<br><br><a class=\"zoomButton\" onclick=\"zoomOut(" + this.region + ")\">Zoom Out</a></div>");
+                markerinfo.setPosition(new google.maps.LatLng(this.lat, this.lng));
             }
         });
         
@@ -489,4 +493,28 @@ function closeWindow() {
     "use strict";
     var window = document.getElementById('info-window');
     window.style.display = 'none';
+}
+
+/**
+ *Zooms in to the selected company location
+ *@param lat:string, lng:string
+ *@return none
+ */
+function zoomIn(lat, lng) {
+    "use strict";
+    zoomFactor = 18;
+    map.setZoom(zoomFactor);
+    map.setCenter(new google.maps.LatLng(lat, lng));
+    //markerinfo.close();
+    isZoomed = 1;
+}
+
+/**
+ *Zooms out to the previously shown region
+ *@param region:string
+ *@return none
+ */
+function zoomOut(region) {
+    zoomToRegion(region);
+    isZoomed = 0;
 }

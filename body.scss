@@ -37,7 +37,7 @@ html, body {
     font-size: 16px;
     border-style: solid;
     border-width: 2px;
-    border-color: #01a8d2;
+    border-color: #01aad2;
 }
 
 #info-window {
@@ -54,7 +54,7 @@ html, body {
     font-size: 16px;
     border-style: solid;
     border-width: 2px;
-    border-color: #01a8d2;
+    border-color: #01aad2;
     padding: 10px;
 }
 
@@ -72,7 +72,7 @@ html, body {
     height: 6%;
     border-style: solid;
     border-width: 3px;
-    border-color: #01a8d2;
+    border-color: #01aad2;
     border-bottom-color: #e6e7e8;
     border-right-color: #e6e7e8;
     text-align: left;
@@ -85,7 +85,7 @@ html, body {
     border-style: solid;
     border-width: 3px;
     border-bottom-width: 1px;
-    border-color: #01a8d2;
+    border-color: #01aad2;
     border-top-color: #e6e7e8;
     border-right-color: #e6e7e8;
 }
@@ -98,9 +98,9 @@ html, body {
     line-height: 22px;
     border-style: solid;
     border-width: 3px;
-    border-color: #01a8d2;
+    border-color: #01aad2;
     border-top-color: #e6e7e8;
-    border-bottom-color: #01a8d2; 
+    border-bottom-color: #01aad2; 
     border-right-color: #e6e7e8;
     padding-left: 40px;           
 }
@@ -113,5 +113,32 @@ html, body {
     width: 69%;
     border-style: solid;
     border-width: 3px;
-    border-color: #01a8d2;
+    border-color: #01aad2;
+}
+
+.zoomButton {
+	background-color:#01aad2;
+	-moz-border-radius:11px;
+	-webkit-border-radius:11px;
+	border-radius:11px;
+	border:2px solid #015d73;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	//font-family:Arial;
+	font-size:14px;
+	padding:6px 22px;
+	text-decoration:none;
+}
+.zoomButton:hover {
+	background-color:#015d73;
+}
+.zoomButton:active {
+	position:relative;
+	top:1px;
+}
+
+.locationInfo {
+    overflow: hidden;
+    white-space: nowrap;
 }
