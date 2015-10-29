@@ -27,7 +27,7 @@ html, body {
     padding-top: 20px;
 }
 
-#open-info-window-button {
+#open-about-button {
     position: absolute;
     top: 0;
     left: 0;
@@ -40,7 +40,7 @@ html, body {
     border-color: #01aad2;
 }
 
-#info-window {
+#about {
     display: none;
     position: absolute;
     vertical-align: middle;
@@ -58,7 +58,7 @@ html, body {
     padding: 10px;
 }
 
-#close-info-window-button {
+#close-about-button {
     position: absolute;
     bottom: 5%;
     left: 90%;

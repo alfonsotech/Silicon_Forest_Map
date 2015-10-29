@@ -495,7 +495,7 @@ function toggleAllMarkers() {
  */
 function openWindow() {
     "use strict";
-    var window = document.getElementById('info-window');
+    var window = document.getElementById('about');
     window.style.display = 'block';
 }
 
@@ -506,6 +506,6 @@ function openWindow() {
  */
 function closeWindow() {
     "use strict";
-    var window = document.getElementById('info-window');
+    var window = document.getElementById('about');
     window.style.display = 'none';
 }

@@ -16,7 +16,7 @@ Copyright 2015 Todd Brochu
       <div class="left-panels">
         <div class="navbar">
             <strong>Silicon Forest Map 2015</strong>
-            <button type="button" id="open-info-window-button" onclick="openWindow()">
+            <button type="button" id="open-about-button" onclick="openWindow()" title="Click for help">
                 <strong>&#63;</strong>
             </button>  
         </div>
@@ -36,7 +36,7 @@ Copyright 2015 Todd Brochu
         <div id="results"></div>
       </div>
       <div id="map"></div>
-      <div id="info-window">
+      <div id="about">
         <strong>Silicon Forest Map</strong><br><br>
         Copyright 2015 Todd Brochu<br><br>
         An interactive map of all of the current companies in the Portland area that employ software developers, software engineers and / or web developers<br><br>
@@ -47,7 +47,7 @@ Copyright 2015 Todd Brochu
         Hovering over a marker on the map will display basic information for that company.<br>
         Clicking on a marker will zoom directly to the corresponding address.<br>
         To zoom back out to the previous view, simply click on the marker again.<br><br>
-        <button type="button" id="close-info-window-button" onclick="closeWindow()">OK</button>
+        <button type="button" id="close-about-button" onclick="closeWindow()">OK</button>
       </div>
     <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk_yXEl8gEgsEtRv1-XgwKZSI2Khim3Sk&callback=initMap">
