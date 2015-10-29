@@ -372,9 +372,9 @@ VALUES(154, 'Exterro', 45.489543, -122.806667, '4145 SW Watson Ave, Suite 400, B
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(155, 'FEI', 45.542902, -122.929018, '5350 NE Dawson Creek Dr, Hillsboro, OR 97124', 'Hillsboro', 'http://www.fei.com/careers/', '(503) 726-7500');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
-VALUES(156, 'fiserv', 45.490226, -122.672816, '4550 SW Macadam Ave, Portland, OR, 97239', 'Portland - SW', 'https://www.fiserv.com/about/careers.aspx', null);
+VALUES(156, 'fiserv (Portland)', 45.490226, -122.672816, '4550 SW Macadam Ave, Portland, OR, 97239', 'Portland - SW', 'https://www.fiserv.com/about/careers.aspx', null);
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
-VALUES(157, 'fiserv', 45.544544, -122.879218, '3400 NW John Olsen Pl, Hillsboro, OR, 97124', 'Hillsboro', 'https://www.fiserv.com/about/careers.aspx', null);
+VALUES(157, 'fiserv (Hillsboro)', 45.544544, -122.879218, '3400 NW John Olsen Pl, Hillsboro, OR, 97124', 'Hillsboro', 'https://www.fiserv.com/about/careers.aspx', null);
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(158, 'Fisher Investments', 45.602874, -122.466146, '5525 NW Fisher Creek Dr, Camas, WA 98607', 'Camas', 'http://www.fisherinvestments.com/about/careers', null);
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
@@ -436,13 +436,13 @@ VALUES(186, 'HoneyComb Corporation', 45.332626, -122.759846, '7929 SW Burns Way,
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(187, 'Hewlett-Packard (HP)', 45.613320, -122.501037, '1115 SE 164th Ave, #210, Vancouver, WA 98683', 'Vancouver', 'http://h30631.www3.hp.com/search/advanced-search/ASCategory/-1/ASPostedDate/-1/ASCountry/-1/ASState/-1/ASCity/-1/ASLocation/-1/ASCompanyName/-1/ASCustom1/-1/ASCustom2/-1/ASCustom3/-1/ASCustom4/-1/ASCustom5/-1/ASIsRadius/true/ASCityStateZipcode/98683/ASDistance/20/ASLatitude/45.6133/ASLongitude/-122.5010/ASDistanceType/Miles', 'Phone: (360) 975-5000');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
-VALUES(188, 'Huron Consulting Group', 45.534265, -122.879480, '1925 NW Amberglen Pkwy, #400, Beaverton, OR 97006', 'Beaverton', 'http://www.huronconsultinggroup.com/Careers', 'Phone: (503) 748-3900');
+VALUES(188, 'Huron Consulting Group (Beaverton)', 45.534265, -122.879480, '1925 NW Amberglen Pkwy, #400, Beaverton, OR 97006', 'Beaverton', 'http://www.huronconsultinggroup.com/Careers', 'Phone: (503) 748-3900');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
-VALUES(189, 'Huron Consulting Group', 45.417114, -122.738737, '6000 Meadows Rd, #300, Lake Oswego, OR 97035', 'Lake Oswego', 'http://www.huronconsultinggroup.com/Careers', 'Phone: (503) 303-1200');
+VALUES(189, 'Huron Consulting Group (Lake Oswego)', 45.417114, -122.738737, '6000 Meadows Rd, #300, Lake Oswego, OR 97035', 'Lake Oswego', 'http://www.huronconsultinggroup.com/Careers', 'Phone: (503) 303-1200');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
-VALUES(190, 'Iberdrola Renewables', 45.307800, -122.761100, '29353 Town Center Loop E, Wilsonville, OR', 'Wilsonville', 'http://saprec.iberdrola.es/sap/bc/webdynpro/sap/hrrcf_a_unreg_job_search?sap-client=099', null);
+VALUES(190, 'Iberdrola Renewables (Wilsonville)', 45.307800, -122.761100, '29353 Town Center Loop E, Wilsonville, OR', 'Wilsonville', 'http://saprec.iberdrola.es/sap/bc/webdynpro/sap/hrrcf_a_unreg_job_search?sap-client=099', null);
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
-VALUES(191, 'Iberdrola Renewables', 45.523813, -122.682553, '1125 NW Couch St, # 700, Portland, OR', 'Portland - NW', 'http://saprec.iberdrola.es/sap/bc/webdynpro/sap/hrrcf_a_unreg_job_search?sap-client=099', null);
+VALUES(191, 'Iberdrola Renewables (Portland)', 45.523813, -122.682553, '1125 NW Couch St, #700, Portland, OR', 'Portland - NW', 'http://saprec.iberdrola.es/sap/bc/webdynpro/sap/hrrcf_a_unreg_job_search?sap-client=099', null);
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(192, 'IBM Systems and Technology Group (STG)', 45.529915, -122.886285, '1385 NW Amberglen Pkwy, Hillsboro, OR 97006', 'Hillsboro', 'http://ibm.jobs/usa/jobs/', 'Phone: (800) 426-4968');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
@@ -1024,4 +1024,8 @@ VALUES(480, 'AKQA', 45.523685, -122.682788, '1120 NW Couch St, Suite 650, Portla
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(481, 'Ruby Receptionists', 45.530272, -122.685221, '1331 NW Lovejoy St, #875, Portland, OR 97209', 'Portland - NW', 'http://www.callruby.com/careers.html', 'Phone: 866-611-7829');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
-VALUES(482, 'Webfor', 45.628987, -122.671907, '1002 Main St., Vancouver, WA 98660', 'Vancouver', 'https://webfor.com/careers/', 'Phone:(360) 747-7794');
+VALUES(482, 'Webfor', 45.628987, -122.671907, '1002 Main St, Vancouver, WA 98660', 'Vancouver', 'https://webfor.com/careers/', 'Phone:(360) 747-7794');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(483, 'Welch Allyn', 45.450935, -122.791656, '9525 SW Gemini Dr, Beaverton, OR 97008', 'Beaverton', 'http://www.welchallyn.com/en/careers.html', 'Phone:(503) 530-7500');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(484, 'EAI Information Systems', 45.457005, -122.792593, '8700 SW Creekside Pl, #A, Beaverton, OR 97008', 'Beaverton', 'http://www.eaiinfosys.com/Company/Contact-Us', 'Phone:(503) 644-3057');
