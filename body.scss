@@ -69,6 +69,7 @@ html, body {
 }
 
 #left-menu-header {
+    position: relative;
     height: 6%;
     border-style: solid;
     border-width: 3px;
@@ -76,6 +77,26 @@ html, body {
     border-bottom-color: #e6e7e8;
     border-right-color: #e6e7e8;
     text-align: left;
+}
+
+.start-here {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+	background-color:#01d235;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:14px;
+	padding:6px 13px;
+	text-decoration:none;
+}
+.start-here:hover {
+	background-color:#0d9c35;
 }
 
 #regions {
