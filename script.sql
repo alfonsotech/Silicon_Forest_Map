@@ -1023,3 +1023,5 @@ INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone
 VALUES(480, 'AKQA', 45.523685, -122.682788, '1120 NW Couch St, Suite 650, Portland, OR 97209', 'Portland - NW', 'http://www.akqa.com/careers/', 'Phone: 503-820-4300');
 INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
 VALUES(481, 'Ruby Receptionists', 45.530272, -122.685221, '1331 NW Lovejoy St, #875, Portland, OR 97209', 'Portland - NW', 'http://www.callruby.com/careers.html', 'Phone: 866-611-7829');
+INSERT INTO Employers(id, name, latitude, longitude, address, region, url, phone)
+VALUES(482, 'Webfor', 45.628987, -122.671907, '1002 Main St., Vancouver, WA 98660', 'Vancouver', 'https://webfor.com/careers/', 'Phone:(360) 747-7794');
