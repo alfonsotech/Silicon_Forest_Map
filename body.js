@@ -107,8 +107,7 @@ function createMarkers() {
     "use strict";
     //se 172nd ave & se rock creek ct, clackamas: 45.421765, -122.485646
     currentCenter = new google.maps.LatLng(45.421765, -122.485646);
-    var i = 0,
-        markerClearance = 0.004;
+    var i = 0;
     
     for (i; i < locations.length; i++) {
         var marker = new google.maps.Marker({
@@ -118,7 +117,6 @@ function createMarkers() {
                 name: locations[i][1],
                 lat: locations[i][2],
                 lng: locations[i][3],
-                //title: locations[i][1] + "\n" + locations[i][4] + "\n" + locations[i][7],
                 address: locations[i][4],
                 region: locations[i][5],
                 link: locations[i][6],
@@ -131,12 +129,7 @@ function createMarkers() {
         marker.addListener('mouseover', function () {
             markerinfo.open(map, marker);
             markerinfo.setContent("<div class=\"locationInfo\"><a href = " + this.link + ">" + this.name + "</a><br><br>" + this.address + "<br>" + this.phone + "<br></div>");
-            if (isZoomed === 0) {
-                markerinfo.setPosition(new google.maps.LatLng(parseFloat(this.lat) + 0.004, this.lng));
-            } else {
-                markerinfo.setPosition(new google.maps.LatLng(parseFloat(this.lat) + 0.00008, this.lng));
-            }
-            
+            markerinfo.setPosition(new google.maps.LatLng(parseFloat(this.lat) + getMarkerOffset(map.getZoom()), this.lng));   
         });
         
         marker.addListener('click', function () {
@@ -508,4 +501,17 @@ function closeWindow() {
     "use strict";
     var window = document.getElementById('about');
     window.style.display = 'none';
+}
+
+/**
+ *Gets the amount of latitude to add to the
+ *position of a map marker's InfoWindow,
+ *according to the current zoom level (from 0-20).
+ *This aids in the ability to click on markers.
+ *@param zoomLevel:integer
+ *@return float
+ */
+function getMarkerOffset(zoomLevel) {
+    var clearances = [0.00798, 0.00754, 0.00710, 0.00666, 0.00620, 0.00576, 0.00532, 0.00488, 0.00444, 0.00400, 0.00356, 0.00300, 0.00200, 0.00120, 0.00060, 0.00030, 0.00015, 0.000075, 0.000038, 0.000019, 0.000010];
+    return (clearances[zoomLevel]);  
 }
