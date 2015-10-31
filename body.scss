@@ -74,7 +74,7 @@ html, body {
     border-style: solid;
     border-width: 3px;
     border-color: #01aad2;
-    border-bottom-color: #e6e7e8;
+    border-bottom: none;
     border-right-color: #e6e7e8;
     text-align: left;
 }
@@ -107,12 +107,12 @@ html, body {
     border-width: 3px;
     border-bottom-width: 1px;
     border-color: #01aad2;
-    border-top-color: #e6e7e8;
+    border-top: none;
     border-right-color: #e6e7e8;
 }
 
 #results {
-    height: 50%;
+    height: 50.25%;
     overflow-x: auto;
     overflow-y: auto;
     white-space: nowrap;
@@ -120,7 +120,7 @@ html, body {
     border-style: solid;
     border-width: 3px;
     border-color: #01aad2;
-    border-top-color: #e6e7e8;
+    border-top: none;
     border-bottom-color: #01aad2; 
     border-right-color: #e6e7e8;
     padding-left: 40px;           
@@ -131,7 +131,7 @@ html, body {
     top: 0;
     right: 0;
     height: 99%;
-    width: 69%;
+    width: 68.75%;
     border-style: solid;
     border-width: 3px;
     border-color: #01aad2;
