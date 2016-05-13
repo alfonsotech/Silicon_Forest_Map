@@ -28,7 +28,7 @@ Copyright 2015 Todd Brochu
         while($row = $result->fetch_assoc()) {
             // Insert a new row in the table for each region returned
             foreach($result as $row) {
-                $display_string .= "<a href=$row[url]>$row[name]</a><br/>";
+                $display_string .= "<a href=$row[url] onclick='openInNewTab($row[url]);'>$row[name]</a><br/>";
              }
         }        
 
