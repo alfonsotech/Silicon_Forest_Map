@@ -128,7 +128,7 @@ function createMarkers() {
         
         marker.addListener('mouseover', function () {
             markerinfo.open(map, marker);
-            markerinfo.setContent("<div class=\"locationInfo\"><a href = " + this.link + ">" + this.name + "</a><br><br>" + this.address + "<br>" + this.phone + "<br></div>");
+            markerinfo.setContent("<div class=\"locationInfo\"><a href = " + this.link + " onclick=\"window.open(this.href); return false;\" onkeypress=\"window.open(this.href); return false;\">" + this.name + "</a><br><br>" + this.address + "<br>" + this.phone + "<br></div>");
             markerinfo.setPosition(new google.maps.LatLng(parseFloat(this.lat) + getMarkerOffset(map.getZoom()), this.lng));   
         });
         
@@ -223,7 +223,7 @@ function toggleMarkers(value) {
 }
 
 /**
- * Gets the tooltip title for each map markers
+ * Gets the tooltip title for each map marker
  * @param latitude:decimal, longitude:decimal, callback
  * @return none
  */
@@ -514,14 +514,4 @@ function closeWindow() {
 function getMarkerOffset(zoomLevel) {
     var clearances = [0.00798, 0.00754, 0.00710, 0.00666, 0.00620, 0.00576, 0.00532, 0.00488, 0.00444, 0.00400, 0.00356, 0.00300, 0.00200, 0.00120, 0.00060, 0.00030, 0.00015, 0.000075, 0.000038, 0.000019, 0.000010];
     return (clearances[zoomLevel]);  
-}
-
-/**
- *onclick event to open the input URL in a new browser window
- *@param url: string
- *@return none
- */
-function openInNewTab(url) {
-    var win = window.open(url, '_blank');
-    win.focus();
 }

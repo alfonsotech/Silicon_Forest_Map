@@ -16,11 +16,7 @@ Copyright 2015 Todd Brochu
         
         $conn = new mysqli($server, $username, $password, $dbname);
 
-        //$latitude = $_GET['latitude'];
-        //$longitude = $_GET['longitude'];
-        //$latitude = mysql_real_escape_string($latitude);
         $latitude = mysqli_real_escape_string($conn, $_GET['latitude']);
-        //$longitude = mysql_real_escape_string($longitude);
         $longitude = mysqli_real_escape_string($conn, $_GET['longitude']);
 
         $sql = "SELECT name, address, phone FROM Employers WHERE latitude = '$latitude' AND longitude = '$longitude' ORDER BY name";
