@@ -1,6 +1,6 @@
 /**
  * Silicon Forest Map
- * Copyright 2015 Todd Brochu
+ * Copyright 2016 Todd Brochu
  */
 /*jslint browser: true, devel: true, plusplus: true*/
 /*global google*/
