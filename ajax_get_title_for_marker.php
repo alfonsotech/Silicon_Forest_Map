@@ -34,6 +34,7 @@ Copyright 2016 Todd Brochu
             }
         }
         echo $display_string;
+print_r ($display_string);
         
         $result->free();
         $conn->close();
