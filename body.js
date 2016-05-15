@@ -338,13 +338,13 @@ function getAllCompanies() {
             locations = JSON.parse("[" + literals + "]");
             
             //future feature to display multiple locations in one title
-            /*for (i = 0; i < locations.length; i++) {
+            for (i = 0; i < locations.length; i++) {
                 (function (i_copy) {
                     getTitlesForMarkers(locations[i_copy][2], locations[i_copy][3], function (result) {
                         titles.push(result);
                     }(i));
                 });
-            }*/
+            }
             createMarkers();
         }
         
