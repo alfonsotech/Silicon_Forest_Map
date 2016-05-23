@@ -28,7 +28,8 @@ var isZoomed = 0;
 function zoomToRegion(region) {
     "use strict";
     var ajaxRequest,
-        queryString = "?region=" + region;
+        queryString = "?region=" + region,
+        result, array;
     
     try {
         ajaxRequest = new XMLHttpRequest();
@@ -47,8 +48,9 @@ function zoomToRegion(region) {
     
     ajaxRequest.onreadystatechange = function () {
         if (ajaxRequest.readyState === 4) {
-            var result = ajaxRequest.responseText.substring(89, ajaxRequest.responseText.length - 15),
-                array = result.split(" ");
+            result = ajaxRequest.responseText.substring(96, ajaxRequest.responseText.length - 16);
+            //was 89 - 15
+            array = result.split(" ");
             zoomFactor = parseInt(array[0]);
             map.setZoom(zoomFactor);
             map.setCenter(new google.maps.LatLng(array[1], array[2]));
@@ -331,7 +333,7 @@ function getAllCompanies() {
     ajaxRequest.onreadystatechange = function () {
         if (ajaxRequest.readyState === 4) {
             //chop off the html encoding from the responseText, leaving just the array value literals
-            var literals = ajaxRequest.responseText.substring(93, ajaxRequest.responseText.length - 15),
+            var literals = ajaxRequest.responseText.substring(93, ajaxRequest.responseText.length - 16),
                 i;
 
             //convert the returned string to an array
@@ -514,4 +516,36 @@ function closeWindow() {
 function getMarkerOffset(zoomLevel) {
     var clearances = [0.00798, 0.00754, 0.00710, 0.00666, 0.00620, 0.00576, 0.00532, 0.00488, 0.00444, 0.00400, 0.00356, 0.00300, 0.00200, 0.00120, 0.00060, 0.00030, 0.00015, 0.000075, 0.000038, 0.000019, 0.000010];
     return (clearances[zoomLevel]);  
+}
+
+/**
+ *When a company link in the companies div is hovered over,
+ *turns the corresponding marker to its highlighted state
+ *called by ajax_get_companies_by_region.php
+ *@param lat:integer, lng:integer
+ *@return none
+ */
+function highlightMarker(lat, lng) {
+    for (i = 0; i < markers.length; i++) {
+        if(markers[i].lat == lat && markers[i].lng == lng) {
+            //set the marker to the highlighted icon
+            markers[i].setIcon('assets/marker_highlighted.png');
+        }
+    }
+}
+
+/**
+ *When a company link in the companies div is moused out,
+ *turns the corresponding marker to its default state
+ *called by ajax_get_companies_by_region.php
+ *@param lat:integer, lng:integer
+ *@return none
+ */
+function setDefaultMarker(lat, lng) {
+    for (i = 0; i < markers.length; i++) {
+        if(markers[i].lat == lat && markers[i].lng == lng) {
+            //set the marker to the default icon
+            markers[i].setIcon('assets/marker.png');
+        }
+    }
 }
