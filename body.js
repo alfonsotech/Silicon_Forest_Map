@@ -337,7 +337,6 @@ function getAllCompanies() {
                 i;
 
             //convert the returned string to an array
-            console.log(literals);
             locations = JSON.parse("[" + literals + "]");
             
             //future feature to display multiple locations in one title
