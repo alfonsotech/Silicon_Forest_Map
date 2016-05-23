@@ -19,7 +19,7 @@ Copyright 2016 Todd Brochu
         //$region = $_GET['region'];
         $region = mysqli_real_escape_string($conn, $_GET['region']);
 
-        $sql = "SELECT * FROM Employers WHERE region = '$region'";
+        $sql = "SELECT name, latitude, longitude, url FROM Employers WHERE region = '$region'";
 
         if(!$result = $conn->query($sql)){
             die('There was an error running the query [' . $conn->error . ']');
@@ -28,7 +28,7 @@ Copyright 2016 Todd Brochu
         while($row = $result->fetch_assoc()) {
             // Insert a new row in the table for each region returned
             foreach($result as $row) {
-                $display_string .= "<a href=$row[url] onclick='window.open(this.href); return false;' onkeypress='window.open(this.href); return false;'>$row[name]</a><br/>";
+                $display_string .= "<a href=$row[url] onclick='window.open(this.href); return false;' onkeypress='window.open(this.href); return false;' onmouseover='highlightMarker($row[latitude], $row[longitude]);' onmouseout='setDefaultMarker($row[latitude], $row[longitude]);'>$row[name]</a><br/>";
              }
         }        
 
