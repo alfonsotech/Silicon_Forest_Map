@@ -333,10 +333,11 @@ function getAllCompanies() {
     ajaxRequest.onreadystatechange = function () {
         if (ajaxRequest.readyState === 4) {
             //chop off the html encoding from the responseText, leaving just the array value literals
-            var literals = ajaxRequest.responseText.substring(93, ajaxRequest.responseText.length - 16),
+            var literals = ajaxRequest.responseText.substring(93, ajaxRequest.responseText.length - 15),
                 i;
 
             //convert the returned string to an array
+            console.log(literals);
             locations = JSON.parse("[" + literals + "]");
             
             //future feature to display multiple locations in one title
