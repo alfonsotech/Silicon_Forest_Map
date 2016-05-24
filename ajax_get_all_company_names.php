@@ -16,7 +16,7 @@ Copyright 2016 Todd Brochu
         
         $conn = new mysqli($server, $username, $password, $dbname);
 
-        $sql = "SELECT url, name FROM Employers ORDER BY name";
+        $sql = "SELECT name, latitude, longitude, url FROM Employers ORDER BY name";
 
         if(!$result = $conn->query($sql)){
             die('There was an error running the query [' . $conn->error . ']');
@@ -27,7 +27,7 @@ Copyright 2016 Todd Brochu
         //while($row = mysql_fetch_array($qry_result)){
         while($row = $result->fetch_assoc()) {
             foreach($result as $row) {
-                $display_string .= "<a href=$row[url]>$row[name]</a><br/>";
+                $display_string .= "<a href=$row[url] onmouseover='setHighlightMarker($row[latitude], $row[longitude]);' onmouseout='setDefaultMarker($row[latitude], $row[longitude]);'>$row[name]</a><br/>";
             }
         }
         echo $display_string;
