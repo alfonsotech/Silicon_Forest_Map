@@ -525,7 +525,7 @@ function getMarkerOffset(zoomLevel) {
  *@param lat:integer, lng:integer
  *@return none
  */
-function highlightMarker(lat, lng) {
+function setHighlightMarker(lat, lng) {
     for (i = 0; i < markers.length; i++) {
         if(markers[i].lat == lat && markers[i].lng == lng) {
             //set the marker to the highlighted icon
