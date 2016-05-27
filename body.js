@@ -130,6 +130,8 @@ function createMarkers() {
         
         marker.addListener('mouseover', function () {
             markerinfo.open(map, marker);
+            //TODO: CONTENT = AJAX GET ALL COMPANIES BY LAT LONG
+            //TODO: MARKERINFO.SETCONTENT(CONTENT)
             markerinfo.setContent("<div class=\"locationInfo\"><a href = " + this.link + " onclick=\"window.open(this.href); return false;\" onkeypress=\"window.open(this.href); return false;\">" + this.name + "</a><br><br>" + this.address + "<br>" + this.phone + "<br></div>");
             markerinfo.setPosition(new google.maps.LatLng(parseFloat(this.lat) + getMarkerOffset(map.getZoom()), this.lng));   
         });
