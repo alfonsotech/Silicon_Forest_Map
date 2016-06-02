@@ -56,12 +56,18 @@ html, body {
     border-width: 2px;
     border-color: #01aad2;
     padding: 10px;
+    overflow-x: none;
+    overflow-y: auto;
+}
+
+#about-content {
+    float: left;
 }
 
 #close-about-button {
-    position: absolute;
-    bottom: 5%;
-    left: 90%;
+    position: relative;
+    top: 5%;
+    left: 85%;
     width: 50px;
     height: 40px;
     font-size: 16px;
