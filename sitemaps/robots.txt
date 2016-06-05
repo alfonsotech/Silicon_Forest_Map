@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Allow: /sitemaps/sitemap.htm
+Sitemap: https://silicon-forest-map.herokuapp.com/sitemaps/sitemap.xml
