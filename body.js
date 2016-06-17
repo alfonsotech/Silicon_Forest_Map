@@ -297,6 +297,8 @@ function getRegions() {
         if (ajaxRequest.readyState === 4) {
             var ajaxDisplay = document.getElementById('regions');
             ajaxDisplay.innerHTML = ajaxRequest.responseText;
+            // turn off the loader
+            ajaxDisplay.style.background = 'none';
         }
     };
 
